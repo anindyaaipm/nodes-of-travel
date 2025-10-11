@@ -55,7 +55,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    background: linear-gradient(135deg, #fffef0 0%, #f9fce7 50%, #e8f8e8 100%);
     background-attachment: fixed;
     min-height: 100vh;
   }
@@ -63,7 +63,7 @@
 
 @layer utilities {
   .page-gradient {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 50%, rgba(240, 147, 251, 0.1) 100%);
+    background: linear-gradient(135deg, rgba(255, 254, 240, 0.3) 0%, rgba(249, 252, 231, 0.3) 50%, rgba(232, 248, 232, 0.3) 100%);
   }
   
   .card-gradient {
@@ -75,7 +75,7 @@
     position: relative;
     border: 2px solid transparent;
     background: linear-gradient(white, white) padding-box,
-                linear-gradient(135deg, #667eea, #764ba2, #f093fb) border-box;
+                linear-gradient(135deg, #fffef0, #f9fce7, #e8f8e8) border-box;
   }
 }
 

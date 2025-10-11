@@ -92,6 +92,7 @@ export default function PlanYourTripPage() {
   };
 
   const specialNeedsOptions = [
+    "Not Required",
     "Dietary Restrictions",
     "Wheelchair Accessibility",
     "Travelling with Babies/Toddlers",
@@ -130,6 +131,19 @@ export default function PlanYourTripPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Validate at least one travel interest is selected
+    if (formData.travelInterests.length === 0) {
+      alert('Please select at least one Travel Style / Interest.');
+      return;
+    }
+    
+    // Validate at least one special need is selected
+    if (formData.specialNeeds.length === 0) {
+      alert('Please select at least one option in Special Needs / Accessibility (including "Not Required" if applicable).');
+      return;
+    }
+    
     setIsSubmitting(true);
     setLoadingMessage(0);
 
@@ -321,7 +335,6 @@ export default function PlanYourTripPage() {
                           onChange={handleChange}
                           required
                           className="w-full rounded-lg border-gray-300 focus:border-teal-500 focus:ring-teal-500"
-                          placeholder="John Doe"
                         />
                       </div>
 
@@ -336,7 +349,6 @@ export default function PlanYourTripPage() {
                           onChange={handleChange}
                           required
                           className="w-full rounded-lg border-gray-300 focus:border-teal-500 focus:ring-teal-500"
-                          placeholder="john@example.com"
                         />
                       </div>
 
@@ -350,7 +362,6 @@ export default function PlanYourTripPage() {
                           value={formData.contactNumber}
                           onChange={handleChange}
                           className="w-full rounded-lg border-gray-300 focus:border-teal-500 focus:ring-teal-500"
-                          placeholder="+1 234 567 8900"
                         />
                       </div>
 
@@ -364,20 +375,19 @@ export default function PlanYourTripPage() {
                           onChange={handleChange}
                           required
                           className="w-full rounded-lg border-gray-300 focus:border-teal-500 focus:ring-teal-500"
-                          placeholder="United States"
                         />
                       </div>
 
                       <div className="md:col-span-2">
                         <label className="block text-sm font-medium text-gray-700 mb-2">
-                          City of Departure (Origin City)
+                          City of Departure (Origin City) <span className="text-red-500">*</span>
                         </label>
                         <Input
                           name="cityOfDeparture"
                           value={formData.cityOfDeparture}
                           onChange={handleChange}
+                          required
                           className="w-full rounded-lg border-gray-300 focus:border-teal-500 focus:ring-teal-500"
-                          placeholder="New York"
                         />
                       </div>
                     </div>
@@ -391,20 +401,20 @@ export default function PlanYourTripPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="md:col-span-2">
                         <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Destination(s)
+                          Destination(s) <span className="text-red-500">*</span>
                         </label>
                         <Input
                           name="destinations"
                           value={formData.destinations}
                           onChange={handleChange}
+                          required
                           className="w-full rounded-lg border-gray-300 focus:border-teal-500 focus:ring-teal-500"
-                          placeholder="Paris, Rome, Barcelona"
                         />
                       </div>
 
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Number of Adults
+                          Number of Adults <span className="text-red-500">*</span>
                         </label>
                         <Input
                           type="number"
@@ -412,14 +422,14 @@ export default function PlanYourTripPage() {
                           value={formData.numberOfAdults}
                           onChange={handleChange}
                           min="1"
+                          required
                           className="w-full rounded-lg border-gray-300 focus:border-teal-500 focus:ring-teal-500"
-                          placeholder="2"
                         />
                       </div>
 
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Number of Children
+                          Number of Children <span className="text-red-500">*</span>
                         </label>
                         <Input
                           type="number"
@@ -427,14 +437,14 @@ export default function PlanYourTripPage() {
                           value={formData.numberOfChildren}
                           onChange={handleChange}
                           min="0"
+                          required
                           className="w-full rounded-lg border-gray-300 focus:border-teal-500 focus:ring-teal-500"
-                          placeholder="0"
                         />
                       </div>
 
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Trip Duration (in days)
+                          Trip Duration (in days) <span className="text-red-500">*</span>
                         </label>
                         <Input
                           type="number"
@@ -442,58 +452,57 @@ export default function PlanYourTripPage() {
                           value={formData.tripDuration}
                           onChange={handleChange}
                           min="1"
+                          required
                           className="w-full rounded-lg border-gray-300 focus:border-teal-500 focus:ring-teal-500"
-                          placeholder="7"
                         />
                       </div>
 
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Preferred Start Date
+                          Preferred Start Date <span className="text-red-500">*</span>
                         </label>
                         <Input
                           type="date"
                           name="preferredStartDate"
                           value={formData.preferredStartDate}
                           onChange={handleChange}
+                          required
                           className="w-full rounded-lg border-gray-300 focus:border-teal-500 focus:ring-teal-500"
                         />
                       </div>
 
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Budget Range
+                          Budget Range <span className="text-red-500">*</span>
                         </label>
                         <select
                           name="budgetRange"
                           value={formData.budgetRange}
                           onChange={handleChange}
+                          required
                           className="w-full rounded-lg border-gray-300 focus:border-teal-500 focus:ring-teal-500 h-10 px-3 py-2 text-sm"
                         >
                           <option value="">Select Budget</option>
                           <option value="Low">Low</option>
                           <option value="Moderate">Moderate</option>
-                          <option value="Premium">Premium</option>
-                          <option value="Luxury">Luxury</option>
+                          <option value="High">High</option>
                         </select>
                       </div>
 
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Mode of Travel
+                          Mode of Travel <span className="text-red-500">*</span>
                         </label>
                         <select
                           name="modeOfTravel"
                           value={formData.modeOfTravel}
                           onChange={handleChange}
+                          required
                           className="w-full rounded-lg border-gray-300 focus:border-teal-500 focus:ring-teal-500 h-10 px-3 py-2 text-sm"
                         >
                           <option value="">Select Mode</option>
-                          <option value="Drive">Drive</option>
                           <option value="Fly">Fly</option>
-                          <option value="Train">Train</option>
-                          <option value="Cruise">Cruise</option>
-                          <option value="Mix">Mix</option>
+                          <option value="Drive">Drive</option>
                         </select>
                       </div>
                     </div>
@@ -502,7 +511,7 @@ export default function PlanYourTripPage() {
                   {/* Travel Style / Interest */}
                   <div>
                     <h2 className="text-2xl font-bold mb-6 pb-2 border-b-2 border-primary">
-                      Travel Style / Interest
+                      Travel Style / Interest <span className="text-red-500">*</span>
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-96 overflow-y-auto p-4 bg-gray-50 rounded-lg">
                       {travelInterestsOptions.map((interest) => (
@@ -522,16 +531,13 @@ export default function PlanYourTripPage() {
                     </div>
                   </div>
 
-                  {/* Trip Preferences */}
+                  {/* Special Needs / Accessibility */}
                   <div>
                     <h2 className="text-2xl font-bold mb-6 pb-2 border-b-2 border-primary">
-                      Trip Preferences
+                      Special Needs / Accessibility <span className="text-red-500">*</span>
                     </h2>
                     <div className="space-y-6">
                       <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-3">
-                          Special Needs / Accessibility
-                        </label>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 bg-gray-50 rounded-lg">
                           {specialNeedsOptions.map((need) => (
                             <label
@@ -560,7 +566,6 @@ export default function PlanYourTripPage() {
                           onChange={handleChange}
                           rows={4}
                           className="w-full rounded-lg border-gray-300 focus:border-teal-500 focus:ring-teal-500"
-                          placeholder="Tell us about any specific experiences, places, or activities you'd like to include..."
                         />
                       </div>
                     </div>
