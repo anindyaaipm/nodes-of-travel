@@ -30,9 +30,7 @@ export default function PlanYourTripPage() {
     travelInterests: [] as string[],
     
     // Trip Preferences
-    accommodationType: "",
-    preferredPace: "",
-    specialNeeds: "",
+    specialNeeds: [] as string[],
     additionalComments: "",
   });
 
@@ -84,6 +82,21 @@ export default function PlanYourTripPage() {
     }));
   };
 
+  const handleSpecialNeedsChange = (need: string) => {
+    setFormData(prev => ({
+      ...prev,
+      specialNeeds: prev.specialNeeds.includes(need)
+        ? prev.specialNeeds.filter(n => n !== need)
+        : [...prev.specialNeeds, need]
+    }));
+  };
+
+  const specialNeedsOptions = [
+    "Dietary Restrictions",
+    "Wheelchair Accessibility",
+    "Travelling with Babies/Toddlers",
+  ];
+
   // Reset form function
   const resetForm = () => {
     setFormData({
@@ -100,9 +113,7 @@ export default function PlanYourTripPage() {
       budgetRange: "",
       modeOfTravel: "",
       travelInterests: [],
-      accommodationType: "",
-      preferredPace: "",
-      specialNeeds: "",
+      specialNeeds: [],
       additionalComments: "",
     });
   };
@@ -152,51 +163,51 @@ export default function PlanYourTripPage() {
     }
   };
 
-  // Loading Screen
+  // Loading Screen - Fixed positioning and centered
   if (isSubmitting) {
     return (
-      <div className="container mx-auto px-4 py-12">
-        <div className="max-w-2xl mx-auto">
-          <Card className="shadow-lg">
+      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
+        <div className="max-w-2xl mx-4 w-full">
+          <Card className="shadow-2xl border-2 border-teal-500">
             <CardContent className="p-12 text-center">
-              {/* Animated Palm Tree */}
-              <div className="mb-8 text-8xl animate-pulse">
+              {/* Animated Palm Tree - Larger and more visible */}
+              <div className="mb-8 text-9xl animate-bounce">
                 🌴
               </div>
               
-              {/* Progress Bar */}
+              {/* Progress Bar - More prominent */}
               <div className="mb-6">
-                <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden shadow-inner">
                   <div 
-                    className="h-full bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500 rounded-full animate-pulse"
+                    className="h-full bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500 rounded-full"
                     style={{
                       width: '100%',
-                      animation: 'progress 3s ease-in-out infinite'
+                      animation: 'progress 2s ease-in-out infinite'
                     }}
                   />
                 </div>
               </div>
 
               {/* Rotating Messages */}
-              <h2 className="text-2xl font-bold mb-3 animate-in fade-in">
+              <h2 className="text-3xl font-bold mb-4 text-gray-900 animate-in fade-in">
                 Creating Your Dream Itinerary
               </h2>
-              <p className="text-lg text-muted-foreground animate-in slide-in-from-bottom-2" key={loadingMessage}>
+              <p className="text-xl text-gray-700 font-medium animate-in slide-in-from-bottom-2" key={loadingMessage}>
                 {loadingMessages[loadingMessage]}
               </p>
 
               {/* Tip */}
-              <div className="mt-8 p-4 bg-blue-50 rounded-lg">
-                <p className="text-sm text-blue-800">
+              <div className="mt-8 p-5 bg-gradient-to-r from-blue-50 to-teal-50 rounded-lg border border-teal-200">
+                <p className="text-base text-blue-900">
                   💡 <strong>Tip:</strong> This usually takes 30-60 seconds. We&apos;re using AI to craft a personalized plan just for you!
                 </p>
               </div>
 
               {/* Loading Dots */}
-              <div className="flex justify-center gap-2 mt-6">
-                <div className="w-3 h-3 bg-teal-500 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
-                <div className="w-3 h-3 bg-teal-500 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
-                <div className="w-3 h-3 bg-teal-500 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
+              <div className="flex justify-center gap-3 mt-8">
+                <div className="w-4 h-4 bg-teal-500 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
+                <div className="w-4 h-4 bg-blue-500 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
+                <div className="w-4 h-4 bg-purple-500 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
               </div>
             </CardContent>
           </Card>
@@ -517,57 +528,26 @@ export default function PlanYourTripPage() {
                       Trip Preferences
                     </h2>
                     <div className="space-y-6">
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                          <label className="block text-sm font-medium text-gray-700 mb-2">
-                            Accommodation Type
-                          </label>
-                          <select
-                            name="accommodationType"
-                            value={formData.accommodationType}
-                            onChange={handleChange}
-                            className="w-full rounded-lg border-gray-300 focus:border-teal-500 focus:ring-teal-500 h-10 px-3 py-2 text-sm"
-                          >
-                            <option value="">Select Type</option>
-                            <option value="Budget">Budget</option>
-                            <option value="Boutique">Boutique</option>
-                            <option value="4-star">4-star</option>
-                            <option value="5-star">5-star</option>
-                            <option value="Villa">Villa</option>
-                            <option value="Airbnb">Airbnb</option>
-                          </select>
-                        </div>
-
-                        <div>
-                          <label className="block text-sm font-medium text-gray-700 mb-2">
-                            Preferred Pace
-                          </label>
-                          <select
-                            name="preferredPace"
-                            value={formData.preferredPace}
-                            onChange={handleChange}
-                            className="w-full rounded-lg border-gray-300 focus:border-teal-500 focus:ring-teal-500 h-10 px-3 py-2 text-sm"
-                          >
-                            <option value="">Select Pace</option>
-                            <option value="Relaxed">Relaxed</option>
-                            <option value="Balanced">Balanced</option>
-                            <option value="Packed & Adventurous">Packed & Adventurous</option>
-                          </select>
-                        </div>
-                      </div>
-
                       <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Special Needs / Requests
+                        <label className="block text-sm font-medium text-gray-700 mb-3">
+                          Special Needs / Accessibility
                         </label>
-                        <Textarea
-                          name="specialNeeds"
-                          value={formData.specialNeeds}
-                          onChange={handleChange}
-                          rows={4}
-                          className="w-full rounded-lg border-gray-300 focus:border-teal-500 focus:ring-teal-500"
-                          placeholder="Any dietary restrictions, accessibility needs, or special requests..."
-                        />
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 bg-gray-50 rounded-lg">
+                          {specialNeedsOptions.map((need) => (
+                            <label
+                              key={need}
+                              className="flex items-center space-x-3 cursor-pointer hover:bg-white p-2 rounded transition-colors"
+                            >
+                              <input
+                                type="checkbox"
+                                checked={formData.specialNeeds.includes(need)}
+                                onChange={() => handleSpecialNeedsChange(need)}
+                                className="w-5 h-5 text-teal-600 border-gray-300 rounded focus:ring-teal-500"
+                              />
+                              <span className="text-sm text-gray-700">{need}</span>
+                            </label>
+                          ))}
+                        </div>
                       </div>
 
                       <div>

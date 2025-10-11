@@ -35,7 +35,7 @@ export default function Home() {
       {/* Subscribe Section */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <Card className="mx-auto max-w-2xl border-2">
+          <Card className="mx-auto max-w-2xl border-2 card-gradient shadow-2xl">
             <CardHeader className="text-center">
               <CardTitle className="text-2xl md:text-3xl">
                 Join Our Travel Community
@@ -50,7 +50,7 @@ export default function Home() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                  className="flex h-10 w-full rounded-md border border-input bg-white/90 px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                 />
                 <Button type="submit" className="sm:w-auto">
                   Subscribe

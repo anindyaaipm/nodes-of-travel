@@ -32,44 +32,56 @@ export default function VideosPage() {
               <p className="text-muted-foreground mt-2">{playlist.description}</p>
             </div>
 
-            {/* Videos Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-8">
-              {playlistVideos.map((video) => (
-                <a
-                  key={video.id}
-                  id={video.id}
-                  href={video.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block scroll-mt-20"
-                >
-                  <Card className="group overflow-hidden transition-all hover:shadow-lg cursor-pointer h-full">
-                    <div className="relative aspect-video bg-muted">
-                      <Image
-                        src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
-                        alt={video.title}
-                        fill
-                        className="object-cover"
-                        unoptimized
-                      />
-                      <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <div className="rounded-full bg-red-600 p-3">
-                          <Play className="h-6 w-6 text-white fill-white" />
+            {/* Horizontal Scrolling Videos */}
+            <div className="relative mb-8">
+              <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                {playlistVideos.map((video) => (
+                  <a
+                    key={video.id}
+                    id={video.id}
+                    href={video.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-none w-64 md:w-80 snap-start scroll-mt-20"
+                  >
+                    <Card className="group overflow-hidden transition-all hover:shadow-xl cursor-pointer h-full hover:scale-105 duration-300">
+                      <div className="relative aspect-video bg-muted">
+                        <Image
+                          src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
+                          alt={video.title}
+                          fill
+                          className="object-cover"
+                          unoptimized
+                        />
+                        <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity">
+                          <div className="rounded-full bg-red-600 p-4 shadow-lg">
+                            <Play className="h-8 w-8 text-white fill-white" />
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <CardHeader className="p-4">
-                      <CardTitle className="text-sm group-hover:text-primary transition-colors line-clamp-2">
-                        {video.title}
-                      </CardTitle>
-                      <CardDescription className="text-xs line-clamp-2 mt-1">
-                        {video.description}
-                      </CardDescription>
-                    </CardHeader>
-                  </Card>
-                </a>
-              ))}
+                      <CardHeader className="p-4">
+                        <CardTitle className="text-base group-hover:text-primary transition-colors line-clamp-2">
+                          {video.title}
+                        </CardTitle>
+                        <CardDescription className="text-sm line-clamp-2 mt-2">
+                          {video.description}
+                        </CardDescription>
+                      </CardHeader>
+                    </Card>
+                  </a>
+                ))}
+              </div>
+              
+              {/* Scroll Indicator */}
+              <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white via-white/50 to-transparent pointer-events-none" />
             </div>
+            
+            {/* CSS to hide scrollbar */}
+            <style jsx>{`
+              .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+              }
+            `}</style>
 
             {/* Related Blog Post */}
             {relatedPost && (
