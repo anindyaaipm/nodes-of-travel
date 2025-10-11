@@ -5,10 +5,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Mail, MapPin, Phone, Send, CheckCircle2 } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
-export default function ContactPage() {
+function ContactForm() {
   const [showSuccess, setShowSuccess] = useState(false);
   const searchParams = useSearchParams();
 
@@ -193,6 +193,14 @@ export default function ContactPage() {
         </Card>
       </div>
     </div>
+  );
+}
+
+export default function ContactPage() {
+  return (
+    <Suspense fallback={<div className="container mx-auto px-4 py-12">Loading...</div>}>
+      <ContactForm />
+    </Suspense>
   );
 }
 
