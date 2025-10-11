@@ -295,7 +295,7 @@ export default function PlanYourTripPage() {
 
           {/* AI Concierge Form Tab */}
           <TabsContent value="form">
-            <Card className="shadow-lg">
+            <Card className="shadow-2xl card-gradient">
               <CardHeader className="text-center border-b">
                 <CardTitle className="text-2xl">AI-Powered Travel Concierge</CardTitle>
                 <CardDescription className="text-base">
@@ -591,7 +591,7 @@ export default function PlanYourTripPage() {
 
           {/* Chat with AI Tab */}
           <TabsContent value="chat">
-            <Card className="shadow-lg min-h-[600px]">
+            <Card className="shadow-2xl min-h-[600px] card-gradient">
               <CardHeader className="text-center border-b">
                 <CardTitle className="text-2xl flex items-center justify-center gap-2">
                   <MessageSquare className="h-6 w-6" />
@@ -625,7 +625,7 @@ export default function PlanYourTripPage() {
 
           {/* Voice Assistant Tab */}
           <TabsContent value="voice">
-            <Card className="shadow-lg min-h-[600px]">
+            <Card className="shadow-2xl min-h-[600px] card-gradient">
               <CardHeader className="text-center border-b">
                 <CardTitle className="text-2xl flex items-center justify-center gap-2">
                   <Mic className="h-6 w-6" />

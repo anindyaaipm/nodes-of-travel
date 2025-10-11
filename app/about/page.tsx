@@ -39,7 +39,7 @@ export default function AboutPage() {
 
       {/* Story Section */}
       <div className="mb-16">
-        <Card>
+        <Card className="card-gradient shadow-xl">
           <CardHeader>
             <CardTitle className="text-2xl">Our Story</CardTitle>
           </CardHeader>
@@ -71,7 +71,7 @@ export default function AboutPage() {
           {values.map((value, index) => {
             const Icon = value.icon;
             return (
-              <Card key={index} className="text-center">
+              <Card key={index} className="text-center card-gradient shadow-lg hover:shadow-2xl transition-shadow">
                 <CardHeader>
                   <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                     <Icon className="h-6 w-6 text-primary" />
@@ -87,7 +87,7 @@ export default function AboutPage() {
 
       {/* Mission Section */}
       <div>
-        <Card className="border-2">
+        <Card className="border-2 card-gradient shadow-xl">
           <CardHeader className="text-center">
             <CardTitle className="text-2xl">Our Mission</CardTitle>
           </CardHeader>

@@ -29,7 +29,7 @@ export default function BlogPage() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="block">
-              <Card className="group overflow-hidden transition-all hover:shadow-lg cursor-pointer h-full">
+              <Card className="group overflow-hidden transition-all hover:shadow-2xl cursor-pointer h-full card-gradient">
                 <div className="relative aspect-video bg-gradient-to-br from-primary/20 to-secondary/20">
                   {post.imageUrl ? (
                     <Image

@@ -22,9 +22,9 @@ function ContactForm() {
   return (
     <div className="container mx-auto px-4 py-12">
       {/* Success Message Popup */}
-      {showSuccess && (
+        {showSuccess && (
         <div className="fixed top-4 right-4 z-50 animate-in slide-in-from-top-2">
-          <Card className="border-green-500 bg-green-50 shadow-lg">
+          <Card className="border-green-500 bg-green-50 shadow-2xl">
             <CardContent className="flex items-center gap-3 p-4">
               <CheckCircle2 className="h-6 w-6 text-green-600" />
               <div>
@@ -46,7 +46,7 @@ function ContactForm() {
       <div className="mx-auto grid max-w-5xl gap-8 lg:grid-cols-3">
         {/* Contact Information */}
         <div className="space-y-6 lg:col-span-1">
-          <Card>
+          <Card className="card-gradient shadow-xl">
             <CardHeader>
               <CardTitle>Contact Information</CardTitle>
               <CardDescription>
@@ -100,7 +100,7 @@ function ContactForm() {
             </CardContent>
           </Card>
 
-          <Card className="bg-primary/5">
+          <Card className="bg-primary/5 card-gradient shadow-lg">
             <CardHeader>
               <CardTitle className="text-lg">Response Time</CardTitle>
             </CardHeader>
@@ -113,7 +113,7 @@ function ContactForm() {
         </div>
 
         {/* Contact Form */}
-        <Card className="lg:col-span-2">
+        <Card className="lg:col-span-2 card-gradient shadow-xl">
           <CardHeader>
             <CardTitle>Send Us a Message</CardTitle>
             <CardDescription>
