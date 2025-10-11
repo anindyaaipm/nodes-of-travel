@@ -33,7 +33,7 @@ export default function AboutPage() {
           About Nodes of Travel
         </h1>
         <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-          Your trusted companion for discovering the world's most amazing destinations
+          Your trusted companion for discovering the world&apos;s most amazing destinations
         </p>
       </div>
 
@@ -52,8 +52,8 @@ export default function AboutPage() {
             </p>
             <p>
               At Nodes of Travel — where every stop is a story, and every journey connects the world 
-              just a little more. Whether it’s quiet canals in Venice or sunrise hikes in the 
-              Himalayas - we don’t just travel, we find meaning in the moments.
+              just a little more. Whether it&apos;s quiet canals in Venice or sunrise hikes in the 
+              Himalayas - we don&apos;t just travel, we find meaning in the moments.
             </p>
             <p>
               Through our blog posts, videos, and innovative trip planning tools, we aim to 

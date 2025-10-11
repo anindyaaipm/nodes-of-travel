@@ -188,7 +188,7 @@ export default function PlanYourTripPage() {
               {/* Tip */}
               <div className="mt-8 p-4 bg-blue-50 rounded-lg">
                 <p className="text-sm text-blue-800">
-                  💡 <strong>Tip:</strong> This usually takes 30-60 seconds. We're using AI to craft a personalized plan just for you!
+                  💡 <strong>Tip:</strong> This usually takes 30-60 seconds. We&apos;re using AI to craft a personalized plan just for you!
                 </p>
               </div>
 
@@ -258,7 +258,7 @@ export default function PlanYourTripPage() {
             Plan Your Perfect Journey
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Choose how you'd like to plan your trip — detailed form, AI chat, or voice assistant
+            Choose how you&apos;d like to plan your trip — detailed form, AI chat, or voice assistant
           </p>
         </div>
 
@@ -288,7 +288,7 @@ export default function PlanYourTripPage() {
               <CardHeader className="text-center border-b">
                 <CardTitle className="text-2xl">AI-Powered Travel Concierge</CardTitle>
                 <CardDescription className="text-base">
-                  Tell us about your journey — we'll craft your personalized travel plan
+                  Tell us about your journey — we&apos;ll craft your personalized travel plan
                 </CardDescription>
               </CardHeader>
               <CardContent className="p-6 md:p-10">
@@ -629,7 +629,7 @@ export default function PlanYourTripPage() {
                     </div>
                     <h3 className="text-xl font-semibold text-gray-900">AI Chatbot Coming Soon</h3>
                     <p className="text-gray-600 max-w-md">
-                      We're building an intelligent chatbot that will help you plan your trip through natural conversation. 
+                      We&apos;re building an intelligent chatbot that will help you plan your trip through natural conversation. 
                       For now, please use the AI Concierge Form or Voice Assistant.
                     </p>
                     <div className="pt-4">
@@ -663,8 +663,8 @@ export default function PlanYourTripPage() {
                     </div>
                     <h3 className="text-xl font-semibold text-gray-900">Voice Assistant Coming Soon</h3>
                     <p className="text-gray-600 max-w-md">
-                      Soon you'll be able to speak naturally with our AI to plan your entire trip. 
-                      Perfect for when you're on the go or prefer voice interaction.
+                      Soon you&apos;ll be able to speak naturally with our AI to plan your entire trip. 
+                      Perfect for when you&apos;re on the go or prefer voice interaction.
                     </p>
                     <div className="pt-4">
                       <p className="text-sm text-gray-500 italic">
@@ -681,7 +681,7 @@ export default function PlanYourTripPage() {
         {/* Thank You Section */}
         <div className="text-center mt-12 mb-8">
           <p className="text-lg italic text-muted-foreground">
-            We believe every journey begins with a story. Let's start writing yours.
+            We believe every journey begins with a story. Let&apos;s start writing yours.
           </p>
         </div>
       </div>

@@ -29,7 +29,7 @@ export default function ContactPage() {
               <CheckCircle2 className="h-6 w-6 text-green-600" />
               <div>
                 <p className="font-semibold text-green-900">Form submitted successfully!</p>
-                <p className="text-sm text-green-700">We'll contact you soon.</p>
+                <p className="text-sm text-green-700">We&apos;ll contact you soon.</p>
               </div>
             </CardContent>
           </Card>
@@ -39,7 +39,7 @@ export default function ContactPage() {
       <div className="mb-12 text-center">
         <h1 className="mb-4 text-4xl font-bold tracking-tight">Get in Touch</h1>
         <p className="text-lg text-muted-foreground">
-          Have questions? We'd love to hear from you.
+          Have questions? We&apos;d love to hear from you.
         </p>
       </div>
 
@@ -76,7 +76,7 @@ export default function ContactPage() {
                 <div>
                   <p className="font-medium">Phone</p>
                   <a
-                    href="tel:+1234567890"
+                    href="tel:+16476492775"
                     className="text-sm text-muted-foreground hover:text-primary transition-colors"
                   >
                     +1 (647) 649-2775
@@ -91,9 +91,9 @@ export default function ContactPage() {
                 <div>
                   <p className="font-medium">Location</p>
                   <p className="text-sm text-muted-foreground">
-                    San Francisco, CA
+                   Mississauga, ON
                     <br />
-                    United States
+                    Canada
                   </p>
                 </div>
               </div>
@@ -117,7 +117,7 @@ export default function ContactPage() {
           <CardHeader>
             <CardTitle>Send Us a Message</CardTitle>
             <CardDescription>
-              Fill out the form below and we'll get back to you as soon as possible
+              Fill out the form below and we&apos;ll get back to you as soon as possible
             </CardDescription>
           </CardHeader>
           <CardContent>
