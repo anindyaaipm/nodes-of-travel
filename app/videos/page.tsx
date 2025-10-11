@@ -1,3 +1,5 @@
+"use client";
+
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Play, BookOpen } from "lucide-react";
 import Image from "next/image";
