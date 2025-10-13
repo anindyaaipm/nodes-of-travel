@@ -61,15 +61,15 @@ function ContactForm() {
                 <div>
                   <p className="font-medium">Email</p>
                   <a
-                    href="mailto:hello@nodesoftravel.com"
+                    href="mailto:anindyaaipm@gmail.com"
                     className="text-sm text-muted-foreground hover:text-primary transition-colors"
                   >
-                    hello@nodesoftravel.com
+                    anindyaaipm@gmail.com
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-start gap-3">
+              {/* <div className="flex items-start gap-3">
                 <div className="mt-1 rounded-full bg-primary/10 p-2">
                   <Phone className="h-4 w-4 text-primary" />
                 </div>
@@ -82,7 +82,7 @@ function ContactForm() {
                     +1 (647) 649-2775
                   </a>
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex items-start gap-3">
                 <div className="mt-1 rounded-full bg-primary/10 p-2">
