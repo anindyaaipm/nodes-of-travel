@@ -1,12 +1,24 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import Script from "next/script";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Loader2, CheckCircle2, MessageSquare, Mic, FileText } from "lucide-react";
+
+// Declare custom element for ElevenLabs voice widget
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'elevenlabs-convai': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
+        'agent-id': string;
+      };
+    }
+  }
+}
 
 export default function PlanYourTripPage() {
   const [formData, setFormData] = useState({
@@ -41,7 +53,7 @@ export default function PlanYourTripPage() {
   const loadingMessages = [
     "🌴 Packing your virtual bags...",
     "✈️ Finding the best flights...",
-    "🏨 Booking amazing accommodations...",
+    "🏨 Finding amazing accommodations...",
     "🗺️ Mapping out your journey...",
     "🎒 Planning exciting activities...",
     "📧 Preparing your itinerary...",
@@ -275,35 +287,42 @@ export default function PlanYourTripPage() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <div className="max-w-6xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-12">
+    <>
+      {/* Load ElevenLabs Voice Widget Script */}
+      <Script 
+        src="https://unpkg.com/@elevenlabs/convai-widget-embed" 
+        strategy="lazyOnload"
+      />
+      
+      <div className="container mx-auto px-4 py-12">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
             Plan Your Perfect Journey
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Choose how you&apos;d like to plan your trip — detailed form, AI chat, or voice assistant
+            Choose how you&apos;d like to plan your trip — detailed form or voice/chat assistant
           </p>
-        </div>
+          </div>
 
         {/* Tabs */}
         <Tabs defaultValue="form" className="w-full">
-          <TabsList className="grid w-full grid-cols-3 mb-8">
+          <TabsList className="grid w-full grid-cols-2 mb-8">
             <TabsTrigger value="form" className="flex items-center gap-2">
               <FileText className="h-4 w-4" />
               <span className="hidden sm:inline">AI Concierge Form</span>
               <span className="sm:hidden">Form</span>
             </TabsTrigger>
-            <TabsTrigger value="chat" className="flex items-center gap-2">
+            {/* <TabsTrigger value="chat" className="flex items-center gap-2">
               <MessageSquare className="h-4 w-4" />
               <span className="hidden sm:inline">Chat with AI</span>
               <span className="sm:hidden">Chat</span>
-            </TabsTrigger>
+            </TabsTrigger> */}
             <TabsTrigger value="voice" className="flex items-center gap-2">
               <Mic className="h-4 w-4" />
-              <span className="hidden sm:inline">Voice Assistant</span>
-              <span className="sm:hidden">Voice</span>
+              <span className="hidden sm:inline">Voice / Chat Assistant</span>
+              <span className="sm:hidden">Voice / Chat</span>
             </TabsTrigger>
           </TabsList>
 
@@ -484,7 +503,7 @@ export default function PlanYourTripPage() {
                         >
                           <option value="">Select Budget</option>
                           <option value="Low">Low</option>
-                          <option value="Moderate">Moderate</option>
+                          <option value="Medium">Medium</option>
                           <option value="High">High</option>
                         </select>
                       </div>
@@ -594,8 +613,8 @@ export default function PlanYourTripPage() {
             </Card>
           </TabsContent>
 
-          {/* Chat with AI Tab */}
-          <TabsContent value="chat">
+          {/* Chat with AI Tab - Commented Out */}
+          {/* <TabsContent value="chat">
             <Card className="shadow-2xl min-h-[600px] card-gradient">
               <CardHeader className="text-center border-b">
                 <CardTitle className="text-2xl flex items-center justify-center gap-2">
@@ -626,36 +645,38 @@ export default function PlanYourTripPage() {
                 </div>
               </CardContent>
             </Card>
-          </TabsContent>
+          </TabsContent> */}
 
-          {/* Voice Assistant Tab */}
+          {/* Voice / Chat Assistant Tab */}
           <TabsContent value="voice">
             <Card className="shadow-2xl min-h-[600px] card-gradient">
               <CardHeader className="text-center border-b">
                 <CardTitle className="text-2xl flex items-center justify-center gap-2">
                   <Mic className="h-6 w-6" />
-                  Voice Travel Assistant
+                  Voice / Chat Travel Assistant
                 </CardTitle>
                 <CardDescription className="text-base">
-                  Talk to our AI assistant to plan your trip hands-free
+                  Talk or chat with our AI assistant to plan your trip
                 </CardDescription>
               </CardHeader>
               <CardContent className="p-6 md:p-10">
-                <div className="flex items-center justify-center min-h-[400px]">
-                  <div className="text-center space-y-4">
-                    <div className="w-20 h-20 mx-auto bg-orange-100 rounded-full flex items-center justify-center">
-                      <Mic className="h-10 w-10 text-orange-600" />
-                    </div>
-                    <h3 className="text-xl font-semibold text-gray-900">Voice Assistant Coming Soon</h3>
-                    <p className="text-gray-600 max-w-md">
-                      Soon you&apos;ll be able to speak naturally with our AI to plan your entire trip. 
-                      Perfect for when you&apos;re on the go or prefer voice interaction.
+                <div className="flex flex-col items-center justify-center min-h-[400px] space-y-6">
+                  <div className="text-center space-y-4 max-w-2xl">
+                    <h3 className="text-2xl font-semibold text-gray-900">Start Your Voice / Chat Conversation</h3>
+                    <p className="text-gray-600 text-lg">
+                      Click the button below to speak or chat with our AI travel assistant. 
+                      Share your travel dreams and let us help you plan the perfect journey!
                     </p>
-                    <div className="pt-4">
-                      <p className="text-sm text-gray-500 italic">
-                        This feature will support natural voice commands and multi-language conversations.
+                    <div className="pt-2 space-y-2">
+                      <p className="text-sm text-gray-500">
+                        💬 Natural conversation • 🌍 Multi-language support • ✈️ Personalized recommendations
                       </p>
                     </div>
+                  </div>
+                  
+                  {/* ElevenLabs Voice Widget */}
+                  <div className="w-full flex justify-center pt-8">
+                    <elevenlabs-convai agent-id="agent_8401k7ft8xjteahagq9f2efyy13n"></elevenlabs-convai>
                   </div>
                 </div>
               </CardContent>
@@ -669,7 +690,8 @@ export default function PlanYourTripPage() {
             We believe every journey begins with a story. Let&apos;s start writing yours.
           </p>
         </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
