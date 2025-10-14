@@ -1,6 +1,6 @@
 ---
 title: "Southwest USA Road Trip - Canyon Dreams"
-date: "2024-11-15"
+date: "2025-04-15"
 excerpt: "From Monument Valley to the Grand Canyon, experience the American Southwest."
 category: "Travel Stories"
 author: "Nodes of Travel"
@@ -21,7 +21,7 @@ In this action-packed 9-day adventure, we’ll explore the wild and untamed beau
 We’ll journey deep into the heart of Monument Valley, capture the breathtaking curve of Horseshoe Bend, and stand in silent awe at the Grand Canyon — before ending amidst the shimmering lights of Las Vegas.
 
 
-🎬 **[Watch the full journey on YouTube: The Magical Southwest Road Trip](/videos#V7rEAkFPNfs)**
+🎬 **[Watch the full journey: The Magical Southwest Road Trip](/videos#southwest-usa-series)**
 
 ---
 

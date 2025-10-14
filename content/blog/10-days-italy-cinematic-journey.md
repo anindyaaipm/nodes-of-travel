@@ -1,6 +1,6 @@
 ---
 title: "🇮🇹 10 Days in Italy – A Cinematic Journey from Venice to Rome"
-date: "2024-10-10"
+date: "2025-05-31"
 excerpt: "Because in Italy, every step feels like forever captured in motion."
 category: "Travel Stories"
 author: "Nodes of Travel"
@@ -20,7 +20,7 @@ This is not just an itinerary. It's a story of trains, tides, sunsets, and momen
 
 If you're planning your first Italy trip, this 10-day route will guide you through the highlights and emotions — drawn from our own journey across the country.
 
-🎥 **[Watch our cinematic Italy series on Nodes of Travel](/videos)**
+🎥 **[Watch our cinematic Italy series on Nodes of Travel](/videos#italy-series)**
 
 ---
 
@@ -113,7 +113,7 @@ From **Fiumicino Airport**, we watched the country fade beneath the clouds. Beca
 
 ---
 
-## 🎬 Watch the Complete Journey
+🎬 **[🎬 Watch the full journey on YouTube: The Magical Southwest Road Trip 2025](/videos#uYj_J8WJmd0)**
 
 ✨ **[Venice – Watch Here](/videos#CIqRQt7WLCM)**  
 🎨 **[Florence + Pisa – Watch Here](/videos#AcQX7z04TUc)**  

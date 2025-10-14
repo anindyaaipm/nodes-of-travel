@@ -29,6 +29,12 @@ export const playlists: VideoPlaylist[] = [
     description: "A journey through Southwest USA - Zion National Park, Bryce Canyon, Arches National Park, Monument Valley, Horseshoe Bend, and Grand Canyon",
 emoji: "🇺🇸",
   },
+  {
+    id: "rajasthan-india-series",
+    title: "Rajasthan India Travel Series",
+    description: "A journey through Rajasthan, India - Jaipur, Jaisalmer, Jodhpur, Udaipur, and Chittorgarh",
+    emoji: "🇮🇳",
+  },
   // Add more playlists as you create them
 ];
 
@@ -36,7 +42,7 @@ export const videos: Video[] = [
   // Italy Series
   {
     id: "uYj_J8WJmd0", // YouTube video ID (used for thumbnails and anchor links)
-    title: "Perfect 10 DayItaly Itinerary",
+    title: "Perfect 10 Day Italy Itinerary",
     description: "Venice, Florence, Pisa, Cinque Terre & Rome",
     category: "Travel Film",
     url: "https://youtu.be/uYj_J8WJmd0",
@@ -156,6 +162,57 @@ export const videos: Video[] = [
         tags: ["southwest", "usa", "zion", "bryce", "arches", "monument", "horseshoe", "grand", "canyon", "cinematic"],
         relatedBlog: "southwest-usa-roadtrip",
         playlist: "southwest-usa-series",
+    },
+    // Rajasthan India Series
+    {
+        id: "MSHf_zr2JxE", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Jaipur",
+        description: "Experience Jaipur",
+        category: "Travel Film",
+        url: "https://youtu.be/MSHf_zr2JxE",
+        tags: ["rajasthan", "india", "jaipur", "cinematic"],
+        relatedBlog: "9-days-rajasthan-cinematic-journey",
+        playlist: "rajasthan-india-series",
+    },
+    {
+        id: "zmFgblKuYTk", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Jaisalmer",
+        description: "Experience Jaisalmer",
+        category: "Travel Film",
+        url: "https://youtu.be/zmFgblKuYTk",
+        tags: ["rajasthan", "india", "jaisalmer", "cinematic"],
+        relatedBlog: "9-days-rajasthan-cinematic-journey",
+        playlist: "rajasthan-india-series",
+    },
+    {
+        id: "67rZQ3qmL2k", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Jodhpur",
+        description: "Experience Jodhpur",
+        category: "Travel Film",
+        url: "https://youtu.be/67rZQ3qmL2k",
+        tags: ["rajasthan", "india", "jodhpur", "cinematic"],
+        relatedBlog: "9-days-rajasthan-cinematic-journey",
+        playlist: "rajasthan-india-series",
+    },
+    {
+        id: "Q2weWRU_Z7M", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Udaipur",
+        description: "Experience Udaipur",
+        category: "Travel Film",
+        url: "https://youtu.be/Q2weWRU_Z7M",
+        tags: ["rajasthan", "india", "udaipur", "cinematic"],
+        relatedBlog: "9-days-rajasthan-cinematic-journey",
+        playlist: "rajasthan-india-series",
+    },
+    {
+        id: "vwMzTIkQakY", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Rajasthan",
+        description: "The Complete Journey - Experience Rajasthan in 9 Days",
+        category: "Travel Film",
+        url: "https://youtu.be/vwMzTIkQakY",
+        tags: ["rajasthan", "india", "jaipur", "jaisalmer", "jodhpur", "udaipur", "chittorgarh", "cinematic"],
+        relatedBlog: "9-days-rajasthan-cinematic-journey",
+        playlist: "rajasthan-india-series",
     },
 ];
 
