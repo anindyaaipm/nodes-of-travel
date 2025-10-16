@@ -35,6 +35,12 @@ emoji: "🇺🇸",
     description: "A journey through Rajasthan, India - Jaipur, Jaisalmer, Jodhpur, Udaipur, and Chittorgarh",
     emoji: "🇮🇳",
   },
+  {
+    id: "yucatan-mexico-series",
+    title: "Yucatan Mexico Travel Series",
+    description: "A journey through Yucatan, Mexico - Cancun, Isla Mujeres, Tulum, and Merida",
+    emoji: "🇲🇽",
+  },
   // Add more playlists as you create them
 ];
 
@@ -213,6 +219,107 @@ export const videos: Video[] = [
         tags: ["rajasthan", "india", "jaipur", "jaisalmer", "jodhpur", "udaipur", "chittorgarh", "cinematic"],
         relatedBlog: "9-days-rajasthan-cinematic-journey",
         playlist: "rajasthan-india-series",
+    },
+    // Yucatan Mexico Series
+    {
+        id: "6FZf_oytyVo", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Yucatan",
+        description: "The Complete Journey - Experience Yucatan in 7 Days",
+        category: "Travel Film",
+        url: "https://youtu.be/6FZf_oytyVo",
+        tags: ["yucatan", "mexico", "cancun", "isla-mujeres", "tulum", "merida", "cinematic"],
+        relatedBlog: "week-in-yucatan-mexico",
+        playlist: "yucatan-mexico-series",
+    },
+    {
+        id: "CRNripSbj6o", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Cancun Terminal arrival experience",
+        description: "Experience Cancun Terminal arrival experience",
+        category: "Travel Film",
+        url: "https://youtu.be/CRNripSbj6o",
+        tags: ["yucatan", "mexico", "cancun", "isla-mujeres", "tulum", "merida", "cinematic"],
+        relatedBlog: "week-in-yucatan-mexico",
+        playlist: "yucatan-mexico-series",
+    },
+    {
+        id: "p1WHvcixzfI", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Isla Mujeres Trip", 
+        description: "Experience Isla Mujeres Trip",
+        category: "Travel Film",
+        url: "https://youtu.be/p1WHvcixzfI",
+        tags: ["yucatan", "mexico", "cancun", "isla-mujeres", "tulum", "merida", "cinematic"],
+        relatedBlog: "week-in-yucatan-mexico",
+        playlist: "yucatan-mexico-series",
+    },
+    {
+        id: "dfqxddzbRfM", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Ek Balam Trip",
+        description: "Experience Ek Balam Trip",
+        category: "Travel Film",
+        url: "https://youtu.be/dfqxddzbRfM",
+        tags: ["yucatan", "mexico", "cancun", "isla-mujeres", "tulum", "merida", "cinematic"],
+        relatedBlog: "week-in-yucatan-mexico",
+        playlist: "yucatan-mexico-series",
+    },
+    {
+        id: "nbO-zgnvNCk", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Chichen Itza Trip",
+        description: "Experience Chichen Itza Trip",
+        category: "Travel Film",
+        url: "https://youtu.be/nbO-zgnvNCk",
+        tags: ["yucatan", "mexico", "cancun", "isla-mujeres", "tulum", "merida", "cinematic"],
+        relatedBlog: "week-in-yucatan-mexico",
+        playlist: "yucatan-mexico-series",
+    },
+    {
+        id: "6MpOXrnXT44", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Valladolid Trip",
+        description: "Experience Valladolid Trip",
+        category: "Travel Film",
+        url: "https://youtu.be/6MpOXrnXT44",
+        tags: ["yucatan", "mexico", "cancun", "isla-mujeres", "tulum", "merida", "cinematic"],
+        relatedBlog: "week-in-yucatan-mexico",
+        playlist: "yucatan-mexico-series",
+    },
+    {
+        id: "0S48k7zvVHY", // YouTube video ID (used for thumbnails and anchor links)
+        title: "ADO Bus Trip",
+        description: "Experience ADO Bus Trip",
+        category: "Travel Film",
+        url: "https://youtu.be/0S48k7zvVHY",
+        tags: ["yucatan", "mexico", "cancun", "isla-mujeres", "tulum", "merida", "cinematic"],
+        relatedBlog: "week-in-yucatan-mexico",
+        playlist: "yucatan-mexico-series",
+    },
+    {
+        id: "s8c8cWner_M", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Puerto Juarez Hotel Trip",
+        description: "Experience Puerto Juarez Hotel Trip",
+        category: "Travel Film",
+        url: "https://youtu.be/s8c8cWner_M",
+        tags: ["yucatan", "mexico", "cancun", "isla-mujeres", "tulum", "merida", "cinematic"],
+        relatedBlog: "week-in-yucatan-mexico",
+        playlist: "yucatan-mexico-series",
+    },
+    {
+        id: "wEUzDNLKr9I", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Isla Mujeres Hotel Trip",
+        description: "Experience Isla Mujeres Hotel Trip",
+        category: "Travel Film",
+        url: "https://youtu.be/wEUzDNLKr9I",
+        tags: ["yucatan", "mexico", "cancun", "isla-mujeres", "tulum", "merida", "cinematic"],
+        relatedBlog: "week-in-yucatan-mexico",
+        playlist: "yucatan-mexico-series",
+    },
+    {
+        id: "2wrEtwv5D6Y", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Valladolid Hotel Trip",
+        description: "Experience Valladolid Hotel Trip",
+        category: "Travel Film",
+        url: "https://youtu.be/2wrEtwv5D6Y",
+        tags: ["yucatan", "mexico", "cancun", "isla-mujeres", "tulum", "merida", "cinematic"],
+        relatedBlog: "week-in-yucatan-mexico",
+        playlist: "yucatan-mexico-series",
     },
 ];
 

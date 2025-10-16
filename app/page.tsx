@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
+import { Suspense } from "react";
+import SubscribeForm from "@/components/SubscribeForm";
 
 export default function Home() {
   return (
@@ -35,32 +36,9 @@ export default function Home() {
       {/* Subscribe Section */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <Card className="mx-auto max-w-2xl border-2 card-gradient shadow-2xl">
-            <CardHeader className="text-center">
-              <CardTitle className="text-2xl md:text-3xl">
-                Join Our Travel Community
-              </CardTitle>
-              <CardDescription className="text-base">
-                Get the latest travel tips, destination guides, and exclusive content 
-                delivered straight to your inbox.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <form className="flex flex-col gap-4 sm:flex-row">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex h-10 w-full rounded-md border border-input bg-white/90 px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                />
-                <Button type="submit" className="sm:w-auto">
-                  Subscribe
-                </Button>
-              </form>
-              <p className="mt-4 text-center text-xs text-muted-foreground">
-                We respect your privacy. Unsubscribe at any time.
-              </p>
-            </CardContent>
-          </Card>
+          <Suspense fallback={<div className="text-center">Loading...</div>}>
+            <SubscribeForm />
+          </Suspense>
         </div>
       </section>
     </div>

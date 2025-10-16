@@ -294,7 +294,7 @@ export default function PlanYourTripPage() {
         strategy="lazyOnload"
       />
       
-      <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-12">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
@@ -304,7 +304,7 @@ export default function PlanYourTripPage() {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Choose how you&apos;d like to plan your trip — detailed form or voice/chat assistant
           </p>
-          </div>
+        </div>
 
         {/* Tabs */}
         <Tabs defaultValue="form" className="w-full">
@@ -386,22 +386,21 @@ export default function PlanYourTripPage() {
 
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Country of Residence <span className="text-red-500">*</span>
-                        </label>
-                        <Input
+                          Country of Residence
+                      </label>
+                      <Input
                           name="countryOfResidence"
                           value={formData.countryOfResidence}
                           onChange={handleChange}
-                          required
                           className="w-full rounded-lg border-gray-300 focus:border-teal-500 focus:ring-teal-500"
-                        />
-                      </div>
+                      />
+                    </div>
 
                       <div className="md:col-span-2">
                         <label className="block text-sm font-medium text-gray-700 mb-2">
                           City of Departure (Origin City) <span className="text-red-500">*</span>
-                        </label>
-                        <Input
+                      </label>
+                      <Input
                           name="cityOfDeparture"
                           value={formData.cityOfDeparture}
                           onChange={handleChange}
@@ -464,8 +463,8 @@ export default function PlanYourTripPage() {
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-2">
                           Trip Duration (in days) <span className="text-red-500">*</span>
-                        </label>
-                        <Input
+                      </label>
+                      <Input
                           type="number"
                           name="tripDuration"
                           value={formData.tripDuration}
@@ -473,15 +472,15 @@ export default function PlanYourTripPage() {
                           min="1"
                           required
                           className="w-full rounded-lg border-gray-300 focus:border-teal-500 focus:ring-teal-500"
-                        />
-                      </div>
+                      />
+                    </div>
 
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-2">
                           Preferred Start Date <span className="text-red-500">*</span>
-                        </label>
-                        <Input
-                          type="date"
+                      </label>
+                      <Input
+                        type="date"
                           name="preferredStartDate"
                           value={formData.preferredStartDate}
                           onChange={handleChange}
@@ -545,7 +544,7 @@ export default function PlanYourTripPage() {
                             className="w-5 h-5 text-teal-600 border-gray-300 rounded focus:ring-teal-500"
                           />
                           <span className="text-sm text-gray-700">{interest}</span>
-                        </label>
+                    </label>
                       ))}
                     </div>
                   </div>
@@ -578,8 +577,8 @@ export default function PlanYourTripPage() {
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-2">
                           Additional Comments or Experiences to Include
-                        </label>
-                        <Textarea
+                    </label>
+                    <Textarea
                           name="additionalComments"
                           value={formData.additionalComments}
                           onChange={handleChange}
@@ -671,9 +670,9 @@ export default function PlanYourTripPage() {
                       <p className="text-sm text-gray-500">
                         💬 Natural conversation • 🌍 Multi-language support • ✈️ Personalized recommendations
                       </p>
-                    </div>
+                      </div>
                   </div>
-                  
+
                   {/* ElevenLabs Voice Widget */}
                   <div className="w-full flex justify-center pt-8">
                     <elevenlabs-convai agent-id="agent_8401k7ft8xjteahagq9f2efyy13n"></elevenlabs-convai>
