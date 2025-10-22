@@ -4,9 +4,9 @@ date: "2025-04-15"
 excerpt: "Essential Yucatán : A week in the Blue Beaches, Mayan ruins and mystic cenotes."
 category: "Travel Stories"
 author: "Nodes of Travel"
-image: "🏜️"
+image: "🇲🇽"
 imageUrl: "https://img.youtube.com/vi/6FZf_oytyVo/maxresdefault.jpg"
-tags: ["usa", "southwest", "road-trip", "grand-canyon", "monument-valley"]
+tags: ["mexico", "yucatan", "cancun", "isla-mujeres", "valladolid", "chichen-itza"]
 ---
 # 🌵 The Magical Southwest Road Trip
 

@@ -26,7 +26,6 @@ export default function PlanYourTripPage() {
     fullName: "",
     email: "",
     contactNumber: "",
-    countryOfResidence: "",
     cityOfDeparture: "",
     
     // Trip Overview
@@ -95,12 +94,41 @@ export default function PlanYourTripPage() {
   };
 
   const handleSpecialNeedsChange = (need: string) => {
-    setFormData(prev => ({
-      ...prev,
-      specialNeeds: prev.specialNeeds.includes(need)
-        ? prev.specialNeeds.filter(n => n !== need)
-        : [...prev.specialNeeds, need]
-    }));
+    setFormData(prev => {
+      // If "Not Required" is clicked
+      if (need === "Not Required") {
+        // If it's already checked, just uncheck it
+        if (prev.specialNeeds.includes(need)) {
+          return {
+            ...prev,
+            specialNeeds: prev.specialNeeds.filter(n => n !== need)
+          };
+        } else {
+          // If it's not checked, check it and uncheck all others
+          return {
+            ...prev,
+            specialNeeds: ["Not Required"]
+          };
+        }
+      } else {
+        // If any other option is clicked
+        // First, remove "Not Required" if it's present
+        const needsWithoutNotRequired = prev.specialNeeds.filter(n => n !== "Not Required");
+        
+        // Then toggle the clicked option
+        if (prev.specialNeeds.includes(need)) {
+          return {
+            ...prev,
+            specialNeeds: needsWithoutNotRequired.filter(n => n !== need)
+          };
+        } else {
+          return {
+            ...prev,
+            specialNeeds: [...needsWithoutNotRequired, need]
+          };
+        }
+      }
+    });
   };
 
   const specialNeedsOptions = [
@@ -116,7 +144,6 @@ export default function PlanYourTripPage() {
       fullName: "",
       email: "",
       contactNumber: "",
-      countryOfResidence: "",
       cityOfDeparture: "",
       destinations: "",
       numberOfAdults: "",
@@ -383,18 +410,6 @@ export default function PlanYourTripPage() {
                           className="w-full rounded-lg border-gray-300 focus:border-teal-500 focus:ring-teal-500"
                         />
                       </div>
-
-                      <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Country of Residence
-                      </label>
-                      <Input
-                          name="countryOfResidence"
-                          value={formData.countryOfResidence}
-                          onChange={handleChange}
-                          className="w-full rounded-lg border-gray-300 focus:border-teal-500 focus:ring-teal-500"
-                      />
-                    </div>
 
                       <div className="md:col-span-2">
                         <label className="block text-sm font-medium text-gray-700 mb-2">

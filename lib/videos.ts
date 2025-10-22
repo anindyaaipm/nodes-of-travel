@@ -38,7 +38,7 @@ emoji: "🇺🇸",
   {
     id: "yucatan-mexico-series",
     title: "Yucatan Mexico Travel Series",
-    description: "A journey through Yucatan, Mexico - Cancun, Isla Mujeres, Tulum, and Merida",
+    description: "A week in the Yucatan - Cancun, Isla Mujeres, Valladolid, Ek Balam, and Chichen Itza",
     emoji: "🇲🇽",
   },
   // Add more playlists as you create them

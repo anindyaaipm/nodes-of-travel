@@ -146,8 +146,9 @@ Whether you seek adventure, photography, or moments of quiet awe — the Southwe
 ---
 
 🎬 **[🎬 Watch the full journey on YouTube: The Magical Southwest Road Trip 2025](/videos#V7rEAkFPNfs)**
-📸 Follow my travels on Nodes of Travel
 
+
+📸 Follow my travels on Nodes of Travel
 
 ## 🎥 Related Stories & Videos
 
