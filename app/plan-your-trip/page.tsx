@@ -690,7 +690,7 @@ export default function PlanYourTripPage() {
 
                   {/* ElevenLabs Voice Widget */}
                   <div className="w-full flex justify-center pt-8">
-                    <elevenlabs-convai agent-id="agent_8401k7ft8xjteahagq9f2efyy13n"></elevenlabs-convai>
+                    <elevenlabs-convai agent-id="agent_0601k7f2pr29fe68sj2x8s1cn3k5"></elevenlabs-convai>
                   </div>
                 </div>
               </CardContent>
