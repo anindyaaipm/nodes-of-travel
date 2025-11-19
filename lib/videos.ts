@@ -47,6 +47,12 @@ emoji: "🇺🇸",
     description: "A week in the Yucatan - Cancun, Isla Mujeres, Valladolid, Ek Balam, and Chichen Itza",
     emoji: "🇲🇽",
   },
+  {
+    id: "canada-coast-to-coast-series",
+    title: "Canada Coast to Coast Travel Series",
+    description: "A journey through West Coast to the Amazing Maritimes of Canada",
+    emoji: "🇨🇦",
+  },
 
    // Add more playlists as you create them
 ];
@@ -418,7 +424,58 @@ export const videos: Video[] = [
         tags: ["rockies", "canada", "banff", "jasper", "yoho", "cinematic"],
         relatedBlog: "rockies-canada-roadtrip",
         playlist: "rockies-canada-series",
-    }
+    },
+    // Canada Coast to Coast Series
+    {
+        id: "eXrancqXrPw",
+        title: "The Wonders of Vancouver and Pacific Coast",
+        description: "The Wonders of Vancouver and Pacific Coast",
+        category: "Travel Film",
+        url: "https://youtu.be/eXrancqXrPw",
+        tags: ["canada", "vancouver", "pacific", "coast", "cinematic"],
+        relatedBlog: "wonders-of-canada-west-coast",
+        playlist: "canada-coast-to-coast-series",
+    },
+    {
+        id: "gpUgk4gr4qc",
+        title: "Sea To Sky Highway & Whistler",
+        description: "Driving through the Sea To Sky Highway & Whistler",
+        category: "Travel Film",
+        url: "https://youtu.be/gpUgk4gr4qc",
+        tags: ["canada", "vancouver", "pacific", "coast", "cinematic", "sea-to-sky", "whistler" ],
+        relatedBlog: "wonders-of-canada-west-coast",
+        playlist: "canada-coast-to-coast-series",
+    },
+    {
+        id: "cuRnlE_wWNI",
+        title: "Hiking Joffre Lakes",
+        description: "Hiking Joffre Lakes",
+        category: "Travel Film",
+        url: "https://youtu.be/cuRnlE_wWNI",
+        tags: ["canada", "vancouver", "pacific", "coast", "cinematic", "joffre-lakes", "hiking"],
+        relatedBlog: "wonders-of-canada-west-coast",
+        playlist: "canada-coast-to-coast-series",
+    },
+    {
+        id: "DPNdZ69lXSo",
+        title: "Canada Maritimes Road Trip - Part 1",
+        description: "Canada Maritimes 1 - PEI - Nova Scotia - New Brunswick",
+        category: "Travel Film",
+        url: "https://youtu.be/DPNdZ69lXSo",
+        tags: ["canada", "maritimes", "road-trip", "cinematic", "pei", "nova-scotia", "new-brunswick"],
+        relatedBlog: "canada-maritimes-road-trip",
+        playlist: "canada-coast-to-coast-series",
+    },
+    {
+        id: "9PHVyXWETSQ",
+        title: "Canada Maritimes Road Trip - Part 2",
+        description: "Canada Maritimes 2 - Nova Scotia  - PEI",
+        category: "Travel Film",
+        url: "https://youtu.be/9PHVyXWETSQ",
+        tags: ["canada", "maritimes", "road-trip", "cinematic", "pei", "nova-scotia", "new-brunswick"],
+        relatedBlog: "canada-maritimes-road-trip",
+        playlist: "canada-coast-to-coast-series",
+    },
 ];
 
 export function getVideoById(id: string): Video | undefined {
