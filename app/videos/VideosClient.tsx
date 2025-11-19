@@ -23,7 +23,7 @@ interface PlaylistWithData {
   description: string;
   emoji: string;
   videos: Video[];
-  relatedPost: BlogPost | null;
+  relatedPosts: BlogPost[];
 }
 
 interface VideosClientProps {
@@ -103,16 +103,19 @@ export default function VideosClient({ playlistsWithData }: VideosClientProps) {
             }
           `}</style>
 
-          {/* Related Blog Post */}
-          {playlist.relatedPost && (
-            <div className="mt-8 text-center">
-              <Link 
-                href={`/blog/${playlist.relatedPost.slug}`}
-                className="inline-flex items-center gap-2 text-lg font-medium text-primary hover:underline"
-              >
-                <BookOpen className="h-5 w-5" />
-                Read the Story: {playlist.relatedPost.title}
-              </Link>
+          {/* Related Blog Posts */}
+          {playlist.relatedPosts && playlist.relatedPosts.length > 0 && (
+            <div className="mt-8 text-center space-y-2">
+              {playlist.relatedPosts.map((post) => (
+                <Link 
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="inline-flex items-center gap-2 text-lg font-medium text-primary hover:underline"
+                >
+                  <BookOpen className="h-5 w-5" />
+                  Read the Story: {post.title}
+                </Link>
+              ))}
             </div>
           )}
         </div>

@@ -442,7 +442,7 @@ export const videos: Video[] = [
         description: "Driving through the Sea To Sky Highway & Whistler",
         category: "Travel Film",
         url: "https://youtu.be/gpUgk4gr4qc",
-        tags: ["canada", "vancouver", "pacific", "coast", "cinematic", "sea-to-sky", "whistler" ],
+        tags: ["canada", "vancouver", "pacific", "coast", "cinematic", "sea-to-sky", "whistler"],
         relatedBlog: "wonders-of-canada-west-coast",
         playlist: "canada-coast-to-coast-series",
     },
@@ -463,7 +463,7 @@ export const videos: Video[] = [
         category: "Travel Film",
         url: "https://youtu.be/DPNdZ69lXSo",
         tags: ["canada", "maritimes", "road-trip", "cinematic", "pei", "nova-scotia", "new-brunswick"],
-        relatedBlog: "canada-maritimes-road-trip",
+        relatedBlog: "wonders-of-canada-east-coast",
         playlist: "canada-coast-to-coast-series",
     },
     {
@@ -473,7 +473,7 @@ export const videos: Video[] = [
         category: "Travel Film",
         url: "https://youtu.be/9PHVyXWETSQ",
         tags: ["canada", "maritimes", "road-trip", "cinematic", "pei", "nova-scotia", "new-brunswick"],
-        relatedBlog: "canada-maritimes-road-trip",
+        relatedBlog: "wonders-of-canada-east-coast",
         playlist: "canada-coast-to-coast-series",
     },
 ];

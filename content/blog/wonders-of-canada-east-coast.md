@@ -10,40 +10,52 @@ tags: ["canada", "maritimes", "road-trip", "cinematic", "pei", "nova-scotia"]
 ---
 ## Maritimes Canada : Nova Scotia, Prince Edward Island and New Brunswick 
 
-Unbelievably scenic and even more enigmatic with breathtaking landscapes and natural phenomena - 45 foot tidal currents “HOPEWELL ROCKS” - world famous coastal drives , magical beaches, stunning lighthouses -PEGGY’s COVE- and of course “The CABOT TRAIL” - not sure “where do I begin to tell the story” :) 
+Welcome to our Canadian maritime adventure, where I’m going to take you on an incredible journey through Prince Edward Island, New Brunswick, and Nova Scotia. It’s going to be eight days of pure exploration, stunning landscapes, and mouthwatering food. So, sit back, relax, and let’s embark on this unforgettable journey together.
 
-Unparalleled history and culture - Graham Bell museum at Baddeck to UNESCO site in LUNENBERG, with its colorful houses boasting Atlantic Maritime Museum .  Canadian 10 Cents marquee Blue Nose schooner… to PEI’s Cavendish’s very own Lucy Montgomery’s “ANNE of the GREEN GABLE” historic sites.
+## DAY 1 - Flying to PEI for the Road Trip of a Lifetime
 
-And most interestingly these provinces are seafood heaven 🍣 …  ‘To die for’ Fish and Chips at the coveside restaurants to the lip smacking clam chowder ; From the world’s best COWS 🐮  ice cream at Charlottetown to PEI’s best potato 🥔 lobster at the Potato Museum . Again at Nova Scotia from the fresh Lobster 🦞 Rolls at the Fishing village of Cheticamp to the wine tasting experience at the Maritimes’ biggest “Jost Vineyard” … phew … and of course many more :) 
+Our journey begins with an early morning flight from Toronto Pearson to Charlottetown, PEI. First stop - the picturesque West Point Lighthouse. We even flew our trusty drone to capture the breathtaking views. Then, it's off to the quirky Canadian Potato Museum for a dining experience you won't believe - lobster in PEI potatoes! Our day ends in the charming Summerside.
 
-The modes of transportation are also quite unprecedented, be it traveling via the cross provincial 13km long CONFEDERATION BRIDGE, which took us from the PEI to New Brunswick to experiencing the NorthCumberland Ferry (NFL), which took us from Nova Scotia to PEI. 
+## DAY 2 - Hopewell Rocks
 
-Natural wonders and scenic sights are something that will keep me going back to these provinces… the winding roads and sheer sights at Cabot Trail os world famous. Considered one of the most fascinating drives in the world it culminates at the 6km long Sunshine Hike/Trail. No words or pictures could do justice to this enchanting hike. Another Nova Scotia special would be the Peggy’s Cove … never seen a better sunset in my life … the setting , with the boulders and the sea is , jaw dropping… 
+Day 2 brings us to the Port Borden Front Range Lighthouse before we cross the epic Confederation Bridge into New Brunswick. Our destination? The awe-inspiring Hopewell Rocks. Timing was key here, as we arrived just in time for low tide and witnessed the dramatic rising waters from the upper level. Our night is spent in Moncton.
 
-We flew in and out of Charlottetown, PEI for our Maritime Canada 🇨🇦 vacation … covered PEI, New Brunswick and Nova Scotia during the 8 days of our travel … lots of drive abut I didn’t mind at all ! 
+## DAY 3 - Entering into Nova Scotia
 
-PEI :
-It might be Canada’s smallest province, but Gosh you cannot imagine how beautiful things could get when it comes to its rich history, culture, scenery and landscape……  From the Black and White “West Point Lighthouse” to the majestic Red Sand cliffs with it’s marquee red and white lighthouses , PEI is home to many of the Atlantic Canada’s best beaches - white sand or red sand , just name it … much like it’s lighthouses - varied yet consistent in beauty .. the best in the world !  
+Rising early on Day 3, we venture into Nova Scotia. But before that, a pit stop at Nova Scotia's renowned Jost Vineyard for some delightful wine tasting. We then drive to Antigonish, where the local seafood, including fish and chips and seafood chowder, leaves our taste buds dancing. The day ends with us arriving at the mesmerizing Iona Heights Inn on Cape Breton Island, where even overcast skies can't dampen our spirits.
 
-Cavendish lies in the North shore , which is home to the red cliffs and stunning red sand beaches … the food here is amazing, as we tried the freshest “fish and chips” one could ever taste. This place is also home to “Anne’s Green Gables” , kind of a folklore here . The novel has been translated over 40 languages and 50 million copies sold worldwide! 
+## DAY 4 - Cabot Trail
 
-And then there is Charlottetown,birthplace of Canada as a confederation in 1867, the charming capital. It’s teeming with history at every corner.. We gotta taste the Cows IceCream 🐮 there ! No wonder it’s voted the best icecream in the world ! We also got a chance to visit PEI Potato Museum, and tasted one of the most tastiest meals at the kitchen there 🥔 
-
-Leaving PEI was incredible when we crossed the 13km long Confederation Bridge. For the later part of our trip which got us back to PEI, we took the NFL for a 75 mins long ferry from Caribou, NS to Wood Islands, PEI ; both experiences were fascinating !
-
-We witnessed some of the best sunrises ☀️ , saw some of the best lighthouses and beaches during our stay at PEI and are desperately in love with the island state. 
-
-New Brunswick:
-We entered NB from PEI , crossing over the Confederation Bridge. It was a great experience. But the main attraction was the Hopewell Rocks … Two times in a day the the tidal bore gushes to submerge the flower pots or the rocks at the Bay of Fundy and is simply incredible. We kept our exploration of NB for sometime later and spent the night at Moncton. Next morning we drove to Nova Scotia … 
+We kick off Day 4 with an early start from Iona. A small ferry ride at Little Narrows takes us to Baddeck, where the Graham Bell Museum leaves us truly impressed. Uncooperative weather forces us to switch our plans and take the Cabot Trail clockwise, and boy, did that decision pay off! We drive the winding Cabot Trail, and we have lunch in the charming Cheticamp. Entering Cape Breton National Park, we embark on the famous Cabot Trail at the 7 km long Skyline Trail hike, surrounded by the natural beauty of Cape Breton. 
 
 
-Nova Scotia:
-Natural wonders and scenic sights are something that will keep me coming back to Nova Scotia - the winding roads and sheer sights makes Cabot Trail  world famous. Considered one of the most fascinating drives in the world it culminates at the 6km long Sunshine Hike/Trail. No words or pictures could do justice to this enchanting hike. 
-We stayed for two nights at a couple of beautiful places at the Cabot Trail and visited the Alexander Graham Bell Museum, which in itself was an enlightening experience.
+🎬 **[Our Experience till Day 4 ](/videos#DPNdZ69lXSo)**
 
-We checked out the famous Jost Vineyard at the North shore of Nova Scotia .. Also got a chance to try some of the best seafood chowder in the world at a famous fishing village of Cheticamp.
+---
 
-But our  Nova Scotia special would be the Peggy’s Cove … never seen a better sunset in my life … the setting , with the boulders and the sea is jaw dropping. The Peggy’s Cove village is a beautiful quaint fisherman’s town , as if time traveled straight from the 18th century.
+## DAY 5 - Peggy's Cove
 
-We chose to skip Halifax this time as time was limited , but we spent half a day at Lunenberg , a world UNESCO site, with its Victorian era colorful houses and the world famous red colored Atlantic Maritime Museum by the harbour, which also docked the original Blue Nose schooner featured in the Canadian Dime. 
+Day 5 is a day of driving, taking us to the iconic Peggy's Cove. We'll delve into the captivating details of this seaside gem and watch one of the most stunning sunsets ever. Our night is spent in Bridgewater.
+
+## DAY 6 - Lunenburg & Back to the PEI
+
+Our adventure continues as we drive to Lunenburg, a UNESCO Heritage site. Here, we explore the fascinating Maritime Atlantic Museum. Next, it's time for a ferry ride from Caribou to PEI, a thrilling 1.5-hour sailing adventure. We enter PEI via the Wood Island Ferry and enjoy the charming lighthouse there. Charlottetown beckons us for a glimpse of the capital, where we visit Notre Dame and indulge in the legendary COWS Ice Cream. Our night is at the picturesque Bay Vista in Cavendish.
+
+## DAY 7 - Green Gables , Lighthouses & Beaches Gallore
+
+We rise early to witness a heavenly sunrise at Prince Edward Island National Park. Then, it's off to Cape Tryon Lighthouse for some thrilling off-road driving. We return to our hotel for a scrumptious breakfast and head to Anne's Green Gables Historic Site. After that, we soak up the sun at Cavendish Beach, followed by a seafood feast by the bay at Rustico. The day wraps up with a visit to Covehead Harbor Lighthouse and beach. We spend our night in charming Cavendish.
+
+## DAY 8 - Flying Back
+
+Our final day arrives, and we make our way back to Charlottetown for our flight back to Toronto. It's been an incredible journey, filled with unforgettable memories. 
+
+
+
+🎬 **[Our Experience till Day 8 ](/videos#9PHVyXWETSQ)**
+
+---
+
+What an incredible journey it has been! From the rolling landscapes of PEI to the stunning Cabot Trail in Nova Scotia, this maritime adventure has been filled with unforgettable moments. The delicious food, the charming lighthouses, and the warm hospitality of the Maritimes have left a lasting impression.
+
+If you’re considering a trip to this part of Canada, I highly recommend it. The Canadian Maritimes have a unique charm that you won’t find anywhere else. Thanks for joining me on this adventure, and be sure to like, subscribe, and hit that notification bell for more travel inspiration. Until next time, keep exploring and stay curious!
 
