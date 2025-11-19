@@ -5,7 +5,7 @@ export async function POST(request: NextRequest) {
     const data = await request.json();
     
     // Get n8n webhook URL from environment variable
-    const n8nWebhookUrl = process.env.N8N_WEBHOOK_URL || 'https://anindyaaipm.app.n8n.cloud/webhook/travel';
+    const n8nWebhookUrl = process.env.N8N_WEBHOOK_URL || 'https://anindyasarkar2016.app.n8n.cloud/webhook/travel';
     
     console.log('📤 Sending data to n8n:', n8nWebhookUrl);
     console.log('📦 Data:', JSON.stringify(data, null, 2));

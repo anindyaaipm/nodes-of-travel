@@ -692,6 +692,15 @@ export default function PlanYourTripPage() {
                   <div className="w-full flex justify-center pt-8">
                     <elevenlabs-convai agent-id="agent_0601k7f2pr29fe68sj2x8s1cn3k5"></elevenlabs-convai>
                   </div>
+                  
+                  {/* Integration Notice */}
+                  <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                    <h4 className="text-sm font-semibold text-blue-900 mb-2">💡 How to Submit Your Voice Conversation</h4>
+                    <p className="text-sm text-blue-800">
+                      After your voice conversation, please use the <strong>"AI Concierge Form"</strong> tab above to submit your trip details. 
+                      The voice assistant helps you plan, but the form ensures your request reaches our team.
+                    </p>
+                  </div>
                 </div>
               </CardContent>
             </Card>
