@@ -36,12 +36,19 @@ emoji: "🇺🇸",
     emoji: "🇮🇳",
   },
   {
+    id: "rockies-canada-series",
+    title: "Rockies Canada Travel Series",
+    description: "A journey through the Rockies - Banff, Jasper, Yoho National Park",
+    emoji: "🇨🇦",
+  },
+  {
     id: "yucatan-mexico-series",
     title: "Yucatan Mexico Travel Series",
     description: "A week in the Yucatan - Cancun, Isla Mujeres, Valladolid, Ek Balam, and Chichen Itza",
     emoji: "🇲🇽",
   },
-  // Add more playlists as you create them
+
+   // Add more playlists as you create them
 ];
 
 export const videos: Video[] = [
@@ -321,6 +328,97 @@ export const videos: Video[] = [
         relatedBlog: "week-in-yucatan-mexico",
         playlist: "yucatan-mexico-series",
     },
+    // Rockies Canada Series
+    {
+        id: "9y-D88zi_k0", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Jasper National Park",
+        description: "Experience Jasper National Park",
+        category: "Travel Film",  
+        url: "https://youtu.be/9y-D88zi_k0",
+        tags: ["rockies", "canada", "jasper", "cinematic"],
+        relatedBlog: "rockies-canada-roadtrip",
+        playlist: "rockies-canada-series",
+    },
+    {
+        id: "U-lrfq-ZBXI", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Athabasca Glacier",
+        description: "Experience Athabasca Glacier",
+        category: "Travel Film",
+        url: "https://youtu.be/U-lrfq-ZBXI",
+        tags: ["rockies", "canada", "banff", "jasper", "yoho", "cinematic"],
+        relatedBlog: "rockies-canada-roadtrip",
+        playlist: "rockies-canada-series",
+    },
+    {
+        id: "nXDm-ePssZY", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Icefields Parkway",
+        description: "Driving through Icefields Parkway",
+        category: "Travel Film",
+        url: "https://youtu.be/nXDm-ePssZY",
+        tags: ["rockies", "canada", "yoho", "cinematic"],
+        relatedBlog: "rockies-canada-roadtrip",
+        playlist: "rockies-canada-series",
+    },
+    {
+        id: "AIBmg3-B7tE", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Yoho National Park",
+        description: "Amazing views at Yoho National Park",
+        category: "Travel Film",
+        url: "https://youtu.be/AIBmg3-B7tE",
+        tags: ["rockies", "canada", "banff", "jasper", "yoho", "cinematic"],
+        relatedBlog: "rockies-canada-roadtrip",
+        playlist: "rockies-canada-series",
+    },
+    {
+        id: "vxQfBAW_kN8", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Lake Louise and Lake Agnes Tea House",
+        description: "Experience Lake Louise and Lake Agnes Tea House",
+        category: "Travel Film",
+        url: "https://youtu.be/vxQfBAW_kN8",
+        tags: ["rockies", "canada", "banff", "jasper", "yoho", "cinematic"],
+        relatedBlog: "rockies-canada-roadtrip",
+        playlist: "rockies-canada-series",
+    },
+    {
+        id: "3-Kgrrx1pGQ", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Moraine Lake",
+        description: "Experience Moraine Lake",
+        category: "Travel Film",
+        url: "https://youtu.be/3-Kgrrx1pGQ",
+        tags: ["rockies", "canada", "banff", "jasper", "yoho", "cinematic"],
+        relatedBlog: "rockies-canada-roadtrip",
+        playlist: "rockies-canada-series",
+    },
+    {
+        id: "XBGGWI9fxLY", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Banff National Park",
+        description: "Experience Banff National Park",
+        category: "Travel Film",
+        url: "https://youtu.be/XBGGWI9fxLY",
+        tags: ["rockies", "canada", "banff", "jasper", "yoho", "cinematic"],
+        relatedBlog: "rockies-canada-roadtrip",
+        playlist: "rockies-canada-series",
+    },
+    {
+        id: "rTa9vnFu3o4", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Johnston Canyon",
+        description: "Hiking through Johnston Canyon",
+        category: "Travel Film",
+        url: "https://youtu.be/rTa9vnFu3o4",
+        tags: ["rockies", "canada", "banff", "jasper", "yoho", "cinematic"],
+        relatedBlog: "rockies-canada-roadtrip",
+        playlist: "rockies-canada-series",
+    },
+    {
+        id: "gznuwZ7IQkI", // YouTube video ID (used for thumbnails and anchor links)
+        title: "Itinerary for Banff , Jasper, Yoho National Park",
+        description: "Itinerary for Banff , Jasper, Yoho National Park",
+        category: "Travel Film",
+        url: "https://youtu.be/gznuwZ7IQkI",
+        tags: ["rockies", "canada", "banff", "jasper", "yoho", "cinematic"],
+        relatedBlog: "rockies-canada-roadtrip",
+        playlist: "rockies-canada-series",
+    }
 ];
 
 export function getVideoById(id: string): Video | undefined {
