@@ -10,9 +10,7 @@ tags: ["canada", "vancouver", "pacific", "coast", "cinematic", "sea-to-sky", "wh
 ---
 ## Magical Vancouver and Pacific Coast 
 
-Imagine yourself to be a popular YouTuber or Travel Vlogger with 100000 subscribers… write a script about a Pacific Coast escapade experience and an itinerary of 4 days. Take into consideration the following itinerary.
-
-“The Pacific Coast was in my list for a long time .. it was after our Maritimes trip and gave us such a varied perspective about the two coastal landscapes … we thought we saw the best during our Atlantic trip that mother nature has to offer , but we held on our nerves ,as we witnessed Pacific  coast with amazement , as the serenity of the mountains kissing the ocean unfurled before our eyes.
+The Pacific Coast was in my list for a long time .. it was after our Maritimes trip and gave us such a varied perspective about the two coastal landscapes … we thought we saw the best during our Atlantic trip that mother nature has to offer , but we held on our nerves ,as we witnessed Pacific  coast with amazement , as the serenity of the mountains kissing the ocean unfurled before our eyes.
 
 ## Day 1: Reaching Vancouver
 we took an early morning fight from Toronto Pearson to Vancouver. 
