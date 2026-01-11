@@ -16,7 +16,7 @@ Welcome to our Canadian maritime adventure, where I’m going to take you on an 
 
 Our journey begins with an early morning flight from Toronto Pearson to Charlottetown, PEI. First stop - the picturesque West Point Lighthouse. We even flew our trusty drone to capture the breathtaking views. Then, it's off to the quirky Canadian Potato Museum for a dining experience you won't believe - lobster in PEI potatoes! Our day ends in the charming Summerside.
 
-## DAY 2 - Hopewell Rocks
+## DAY 2 - Hopewell Rocks - New Brunswick
 
 Day 2 brings us to the Port Borden Front Range Lighthouse before we cross the epic Confederation Bridge into New Brunswick. Our destination? The awe-inspiring Hopewell Rocks. Timing was key here, as we arrived just in time for low tide and witnessed the dramatic rising waters from the upper level. Our night is spent in Moncton.
 
