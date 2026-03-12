@@ -5,7 +5,10 @@ export async function POST(request: NextRequest) {
     const data = await request.json();
     
     // Get n8n webhook URL from environment variable
+<<<<<<< Updated upstream
     //const n8nWebhookUrl = process.env.N8N_WEBHOOK_URL || 'https://andy4work.app.n8n.cloud/webhook/travel';
+=======
+>>>>>>> Stashed changes
     const n8nWebhookUrl = process.env.N8N_WEBHOOK_URL || 'https://primary-production-b06f.up.railway.app/webhook/travel';
     
     console.log('📤 Sending data to n8n:', n8nWebhookUrl);
