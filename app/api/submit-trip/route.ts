@@ -5,11 +5,17 @@ export async function POST(request: NextRequest) {
     const data = await request.json();
     
     // Get n8n webhook URL from environment variable
-<<<<<<< Updated upstream
-    //const n8nWebhookUrl = process.env.N8N_WEBHOOK_URL || 'https://andy4work.app.n8n.cloud/webhook/travel';
-=======
->>>>>>> Stashed changes
-    const n8nWebhookUrl = process.env.N8N_WEBHOOK_URL || 'https://primary-production-b06f.up.railway.app/webhook/travel';
+    //const n8nWebhookUrl = process.env.N8N_WEBHOOK_URL || 'http://anindya-n8n.duckdns.org:5678/webhook/travel';
+    const n8nWebhookUrl = process.env.N8N_WEBHOOK_URL;
+    if (!n8nWebhookUrl) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: 'N8N_WEBHOOK_URL is not configured',
+        },
+        { status: 500 }
+      );
+    }
     
     console.log('📤 Sending data to n8n:', n8nWebhookUrl);
     console.log('📦 Data:', JSON.stringify(data, null, 2));
