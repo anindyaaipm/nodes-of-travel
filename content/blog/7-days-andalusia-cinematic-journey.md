@@ -21,7 +21,10 @@ If you're planning your first trip to southern Spain...this itinerary is for you
 
 We explored this incredible region over six unforgettable days, although if your schedule allows, I'd strongly recommend stretching it into a week. A little extra time lets you slow down and truly enjoy places like Seville and Granada.
 
-🇪🇸 DAY 1 — SEVILLE
+-----
+-----
+
+## 🇪🇸 DAY 1 — SEVILLE
 Every great journey needs the perfect beginning. And for Andalusia... that beginning is Seville.
 
 Lively, colourful and effortlessly beautiful, Seville has a way of slowing you down from the very moment you arrive.
@@ -53,8 +56,10 @@ Passing the historic Torre del Oro and crossing the elegant Triana Bridge, the c
 At Triana cafés began to fill...as the neighbourhood took on a warm, relaxed atmosphere that was impossible not to love.
 It was the perfect ending to our first day. And yet... we had barely scratched the surface.
 
+-----
+-----
 
-🇪🇸 DAY 2 — SEVILLE
+## 🇪🇸 DAY 2 — SEVILLE
 The following morning, we returned to Seville's historic heart.
 Waiting for us was one of the city's greatest landmarks...Seville Cathedral and its iconic Giralda Tower.
 
@@ -74,8 +79,10 @@ We timed our visit for late afternoon  and watching the city transform from day 
 
 With Seville behind us, it was time for the next chapter. 
 
+-----
+-----
 
-🇪🇸 DAY 3 — CÓRDOBA
+## 🇪🇸 DAY 3 — CÓRDOBA
 One of the things we loved most about this itinerary was how easy it was to travel between the major cities. 
 Spain's high-speed trains made the journey to Córdoba incredibly comfortable, leaving us free to simply enjoy the changing landscapes along the way.
 
@@ -121,8 +128,10 @@ Just when we thought we understood Andalusia...it surprised us again. Our next s
 
 🎬 **[Watch the CÓRDOBA story](/videos#JyjAw6PthHI)**
 
+-----
+-----
 
-🇪🇸 DAY 4 — GRANADA
+## 🇪🇸 DAY 4 — GRANADA
 
 If Córdoba feels timeless...Granada feels mysterious.
 From the moment we stepped into its streets... there was something different about the atmosphere.
@@ -182,8 +191,10 @@ Tomorrow...the city had saved its greatest masterpiece for last. The Alhambra.
 
 🎬 **[Watch the Granada and Al-Hambra story](/videos#S-qG6ywtBx8)**
 
+-----
+-----
 
-🇪🇸 DAY 5 — THE ALHAMBRA
+## 🇪🇸 DAY 5 — THE ALHAMBRA
 Day Five of our Andalusia journey began with the experience we'd been looking forward to the most...By now, Andalusia had already surprised us more than once...
 This morning was dedicated to a place that had inspired this entire trip from the very beginning. The Alhambra.
 
@@ -230,12 +241,13 @@ But now... the journey was about to change. We picked up a rental car... left Gr
 
 The destination? A place many consider one of Spain's most beautiful towns. Ronda.
 
-
+-----
+-----
 
 🎬 **[Watch our Pueblo Blancos story ( Ronda & Setenil de las Bodegas)](/videos#Sz9_dvf8DG8)**
 
 
-🇪🇸 DAY 5 EVENING — RONDA
+## 🇪🇸 DAY 5 EVENING — RONDA
 Every now and then... a place appears that makes you stop walking altogether. Ronda was exactly that.Perched dramatically above the El Tajo Gorge... and divided by one of the most spectacular bridges anywhere in Europe...it almost doesn't look real.
 
 And somehow...our hotel offered the most incredible front-row seat imaginable . Waking up to the Puente Nuevo outside our window... with the gorge stretching far below... felt almost surreal.
@@ -247,8 +259,10 @@ Dinner that evening was at El Lechuguita. A wonderfully local tapas bar...full o
 Afterwards... we returned to our balcony overlooking the bridge. For hours... we simply sat there.
 Many visitors arrive for a few hours...take their photographs... and leave. But it's after sunset...and again at sunrise... that Ronda truly becomes unforgettable.
 
+-----
+-----
 
-🇪🇸 DAY 6 — Ronda & Setenil de las Bodegas
+## 🇪🇸 DAY 6 — Ronda & Setenil de las Bodegas
 Our final morning in Andalusia began before sunrise. Standing near the Arco del Cristo...watching the first light slowly reach the Puente Nuevo...
 was one of those travel moments we'll never forget. The town was almost silent.
 And for a little while... it felt as though we had Ronda entirely to ourselves.
@@ -264,6 +278,9 @@ Walking along Cuevas del Sol... before crossing into Cuevas de la Sombra... genu
 
 Before saying goodbye... there was one last local tradition we couldn't resist. Cortadillo Durán.
 A simple regional sweet...rich in flavour... and the perfect final taste of Andalusia.
+
+-----
+-----
 
 THE FINALE
 Looking back...what made this journey so special wasn't simply the places we visited. Every city feels completely different, yet together they tell the story of Andalusia in a way that's difficult to experience by visiting just one place. A region shaped by centuries of civilizations...extraordinary landscapes...remarkable food... and people who welcome you with genuine warmth.
