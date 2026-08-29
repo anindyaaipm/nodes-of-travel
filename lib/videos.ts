@@ -60,7 +60,7 @@ emoji: "🇺🇸",
     emoji: "🇮🇳",
   },
   {
-    id: "Portugal-series",
+    id: "portugal-series",
     title: "Portugal Travel Series",
     description: "A journey through Portugal - Lisbon &Porto",
     emoji: "🇵🇹",
@@ -606,6 +606,37 @@ export const videos: Video[] = [
     relatedBlog: "7-days-andalusia-cinematic-journey",
     playlist: "andalusia-spain-series",
   },
+  //  Portugal Travel  Series
+  {
+    id: "VQYLOV0BjN0",
+    title: "Porto — A City You Simply Fall In Love With",
+    description: "Porto — A City You Simply Fall In Love With",
+    category: "Travel Film",
+    url: "https://youtu.be/VQYLOV0BjN0",
+    tags: ["portugal", "lisbon", "porto", "sintra", "azenhas-do-mar", "cinematic"],
+    relatedBlog: "portugal-travel-series",
+    playlist: "portugal-series",
+},
+{
+  id: "RZGcwm1fwos",
+  title: "Things to do in Lisbon, Portugal 🇵🇹",
+  description: "Things to do in Lisbon, Portugal 🇵🇹",
+  category: "Travel Film",
+  url: "https://youtu.be/RZGcwm1fwos",
+  tags: ["portugal", "lisbon", "porto", "sintra", "azenhas-do-mar", "cinematic"],
+  relatedBlog: "portugal-travel-series",
+  playlist: "portugal-series",
+},
+{
+  id: "_pznykKKF7I",
+  title: "Sintra - Exploring Portugal's Most Iconic Castle & Palace",
+  description: "Sintra - Exploring Portugal's Most Iconic Castle & Palace",
+  category: "Travel Film",
+  url: "https://youtu.be/_pznykKKF7I",
+  tags: ["portugal", "sintra", "pena-palace", "cascais", "cinematic"],
+  relatedBlog: "portugal-travel-series",
+  playlist: "portugal-series",
+},
 ];
 
 export function getVideoById(id: string): Video | undefined {
