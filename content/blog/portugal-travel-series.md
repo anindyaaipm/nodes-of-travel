@@ -1,7 +1,7 @@
 ---
-title: "Portugal Itinerary 🇵🇹 | 5 Days in Porto, Lisbon & Sintra"
+title: "Portugal Itinerary 🇵🇹 5 Days in Porto, Lisbon & Sintra"
 date: "2026-04-30"
-excerpt: "Portugal Itinerary 🇵🇹 | 5 Days in Porto, Lisbon & Sintra"
+excerpt: "Portugal Itinerary 🇵🇹 5 Days in Porto, Lisbon & Sintra"
 category: "Travel Stories"
 author: "Nodes of Travel"
 image: "🇵🇹"
