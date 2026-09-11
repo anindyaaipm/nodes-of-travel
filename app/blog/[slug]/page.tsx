@@ -23,7 +23,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 pb-12 pt-24 md:pt-28">
       <div className="mx-auto max-w-3xl">
         <Button variant="ghost" asChild className="mb-8">
           <Link href="/blog">

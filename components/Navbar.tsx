@@ -1,80 +1,139 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
-import { Menu, X, Plane } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { Menu, X } from "lucide-react";
+import { cn } from "@/lib/utils";
+
+const navLinks = [
+  { href: "/blog", label: "Destinations" },
+  { href: "/blog", label: "Journeys" },
+  { href: "/blog", label: "Travel Guides" },
+  { href: "/videos", label: "Videos" },
+  { href: "/blog", label: "Stories" },
+];
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
-  const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/blog", label: "Blog" },
-    { href: "/videos", label: "Videos" },
-    { href: "/plan-your-trip", label: "Plan Your Trip" },
-    { href: "/about", label: "About" },
-    { href: "/contact", label: "Contact" },
-  ];
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  const overlay = isHome && !scrolled && !open;
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto px-4">
-        <div className="flex h-16 items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <Plane className="h-6 w-6 text-primary" />
-            <span className="text-xl font-bold">Nodes of Travel</span>
-          </Link>
+    <header
+      className={cn(
+        "fixed inset-x-0 top-0 z-50 transition-all duration-500",
+        overlay
+          ? "border-transparent bg-transparent"
+          : "border-b border-border/70 bg-background/95 backdrop-blur-md"
+      )}
+    >
+      <nav className="container mx-auto flex h-[4.25rem] items-center justify-between md:h-[4.75rem]">
+        <Link
+          href="/"
+          className={cn(
+            "font-display text-xl tracking-[0.04em] transition-colors md:text-[1.35rem]",
+            overlay ? "text-white" : "text-foreground"
+          )}
+        >
+          Nodes of Travel
+        </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex md:items-center md:space-x-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-sm font-medium transition-colors hover:text-primary"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
-
-          {/* Mobile menu button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
+        <div className="hidden items-center gap-8 lg:flex">
+          {navLinks.map((link) => (
+            <Link
+              key={`${link.label}-${link.href}`}
+              href={link.href}
+              className={cn(
+                "text-[0.72rem] font-medium uppercase tracking-[0.18em] transition-colors duration-300",
+                overlay
+                  ? "text-white/80 hover:text-white"
+                  : "text-foreground/70 hover:text-foreground"
+              )}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <Link
+            href="/plan-your-trip"
+            className={cn(
+              "btn-editorial px-5 py-2.5 text-[0.68rem]",
+              overlay
+                ? "bg-primary text-primary-foreground shadow-lg shadow-black/25 hover:bg-primary/90"
+                : "bg-primary text-primary-foreground hover:bg-primary/90"
+            )}
           >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </Button>
+            Plan Your Trip
+          </Link>
         </div>
 
-        {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="md:hidden pb-4 space-y-2">
+        <button
+          type="button"
+          className={cn(
+            "inline-flex h-10 w-10 items-center justify-center rounded-sm lg:hidden",
+            overlay ? "text-white" : "text-foreground"
+          )}
+          onClick={() => setOpen((v) => !v)}
+          aria-expanded={open}
+          aria-label={open ? "Close menu" : "Open menu"}
+        >
+          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        </button>
+      </nav>
+
+      {open ? (
+        <div className="border-t border-border bg-background lg:hidden">
+          <div className="container mx-auto flex flex-col gap-1 py-6">
             {navLinks.map((link) => (
               <Link
-                key={link.href}
+                key={`m-${link.label}`}
                 href={link.href}
-                className="block py-2 text-sm font-medium transition-colors hover:text-primary"
-                onClick={() => setIsOpen(false)}
+                className="px-1 py-3 text-sm font-medium uppercase tracking-[0.16em] text-foreground/80"
+                onClick={() => setOpen(false)}
               >
                 {link.label}
               </Link>
             ))}
+            <Link
+              href="/about"
+              className="px-1 py-3 text-sm font-medium uppercase tracking-[0.16em] text-foreground/80"
+              onClick={() => setOpen(false)}
+            >
+              About
+            </Link>
+            <Link
+              href="/contact"
+              className="px-1 py-3 text-sm font-medium uppercase tracking-[0.16em] text-foreground/80"
+              onClick={() => setOpen(false)}
+            >
+              Contact
+            </Link>
+            <Link
+              href="/plan-your-trip"
+              className="btn-editorial-primary mt-4 w-full"
+              onClick={() => setOpen(false)}
+            >
+              Plan Your Trip
+            </Link>
           </div>
-        )}
-      </div>
-    </nav>
+        </div>
+      ) : null}
+    </header>
   );
 };
 
 export default Navbar;
-
-
-
-
-

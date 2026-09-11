@@ -3,15 +3,20 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Script from "next/script";
+// Voice assistant temporarily disabled — restore with the Voice / Chat tab below
+// import Script from "next/script";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsContent } from "@/components/ui/tabs";
+// import { TabsList, TabsTrigger } from "@/components/ui/tabs"; // restore with Voice / Chat tab bar
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Loader2, CheckCircle2, MessageSquare, Mic, FileText } from "lucide-react";
+import { Loader2, CheckCircle2 } from "lucide-react";
+// import { FileText, Mic, MessageSquare } from "lucide-react"; // restore with tab bar
 
 // Declare custom element for ElevenLabs voice widget
+// TEMPORARILY DISABLED with Voice / Chat Assistant — uncomment when re-enabling
+/*
 declare global {
   namespace JSX {
     interface IntrinsicElements {
@@ -21,6 +26,7 @@ declare global {
     }
   }
 }
+*/
 
 export default function PlanYourTripPage() {
   const [formData, setFormData] = useState({
@@ -283,7 +289,7 @@ export default function PlanYourTripPage() {
   // Success Screen
   if (isSuccess) {
     return (
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 pb-12 pt-24 md:pt-28">
         <div className="max-w-2xl mx-auto">
           <Card className="shadow-lg border-green-500">
             <CardContent className="p-12 text-center">
@@ -317,13 +323,14 @@ export default function PlanYourTripPage() {
 
   return (
     <>
-      {/* Load ElevenLabs Voice Widget Script */}
+      {/* Load ElevenLabs Voice Widget Script — TEMPORARILY DISABLED
       <Script 
         src="https://unpkg.com/@elevenlabs/convai-widget-embed" 
         strategy="lazyOnload"
       />
+      */}
       
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 pb-12 pt-24 md:pt-28">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
@@ -331,29 +338,31 @@ export default function PlanYourTripPage() {
             Plan Your Perfect Journey
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Choose how you&apos;d like to plan your trip — detailed form or voice/chat assistant
+            Share your travel details below and we&apos;ll help craft your journey
           </p>
         </div>
 
         {/* Tabs */}
         <Tabs defaultValue="form" className="w-full">
+          {/* Tab bar hidden while Voice / Chat is disabled — restore TabsList when re-enabling
           <TabsList className="grid w-full grid-cols-2 mb-8">
             <TabsTrigger value="form" className="flex items-center gap-2">
               <FileText className="h-4 w-4" />
               <span className="hidden sm:inline">AI Concierge Form</span>
               <span className="sm:hidden">Form</span>
             </TabsTrigger>
-            {/* <TabsTrigger value="chat" className="flex items-center gap-2">
+            <TabsTrigger value="chat" className="flex items-center gap-2">
               <MessageSquare className="h-4 w-4" />
               <span className="hidden sm:inline">Chat with AI</span>
               <span className="sm:hidden">Chat</span>
-            </TabsTrigger> */}
+            </TabsTrigger>
             <TabsTrigger value="voice" className="flex items-center gap-2">
               <Mic className="h-4 w-4" />
               <span className="hidden sm:inline">Voice / Chat Assistant</span>
               <span className="sm:hidden">Voice / Chat</span>
             </TabsTrigger>
           </TabsList>
+          */}
 
           {/* AI Concierge Form Tab */}
           <TabsContent value="form">
@@ -663,7 +672,7 @@ export default function PlanYourTripPage() {
             </Card>
           </TabsContent> */}
 
-          {/* Voice / Chat Assistant Tab */}
+          {/* Voice / Chat Assistant Tab — TEMPORARILY DISABLED (do not delete)
           <TabsContent value="voice">
             <Card className="shadow-2xl min-h-[600px] card-gradient">
               <CardHeader className="text-center border-b">
@@ -690,12 +699,10 @@ export default function PlanYourTripPage() {
                       </div>
                   </div>
 
-                  {/* ElevenLabs Voice Widget */}
                   <div className="w-full flex justify-center pt-8">
                     <elevenlabs-convai agent-id="agent_0601k7f2pr29fe68sj2x8s1cn3k5"></elevenlabs-convai>
                   </div>
                   
-                  {/* Integration Notice */}
                   <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
                     <h4 className="text-sm font-semibold text-blue-900 mb-2">💡 How to Submit Your Voice Conversation</h4>
                     <p className="text-sm text-blue-800">
@@ -707,6 +714,7 @@ export default function PlanYourTripPage() {
               </CardContent>
             </Card>
           </TabsContent>
+          */}
         </Tabs>
 
         {/* Thank You Section */}
