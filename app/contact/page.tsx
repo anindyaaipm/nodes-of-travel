@@ -20,7 +20,7 @@ function ContactForm() {
   }, [searchParams]);
 
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 pb-12 pt-24 md:pt-28">
       {/* Success Message Popup */}
         {showSuccess && (
         <div className="fixed top-4 right-4 z-50 animate-in slide-in-from-top-2">
