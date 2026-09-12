@@ -5,7 +5,7 @@ excerpt: "Because in Italy, every step feels like forever captured in motion."
 category: "Travel Stories"
 author: "Nodes of Travel"
 image: "🇮🇹"
-imageUrl: "https://img.youtube.com/vi/uYj_J8WJmd0/maxresdefault.jpg"
+imageUrl: "/images/blogs/italy/venice.jpeg"
 tags: ["italy", "venice", "florence", "pisa", "cinque-terre", "rome", "travel-vlog", "cinematic"]
 ---
 
@@ -20,17 +20,27 @@ This is not just an itinerary. It's a story of trains, tides, sunsets, and momen
 
 If you're planning your first Italy trip, this 10-day route will guide you through the highlights and emotions — drawn from our own journey across the country.
 
+![Venice, Italy](/images/blogs/italy/venice.jpeg)
+
 🎥 **[Watch our cinematic Italy series on Nodes of Travel](/videos#italy-series)**
 
 ---
 
 ## 🚤 Days 1–3: Venice – The Floating Dream
 
+![Venice canals](/images/blogs/italy/venice-canals.jpeg)
+
+![Rialto Bridge, Venice](/images/blogs/italy/rialto-venice.jpeg)
+
 **Arrival:** We landed in Venice after our overnight flight from Toronto and stepped into a world that floats.
 
 Our first day led us through **Santa Maria Gloriosa dei Frasi** and **Scuola Grande di San Rocco**, both soaked in light and silence. We crossed the Grand Canal by traghetto gondola, watched the sunset from the **Accademia Bridge**, and ended the night at **Rialto Bridge** — music, laughter, pizza, and the scent of water.
 
+![Burano, Venice](/images/blogs/italy/burano-venice-italy.jpeg)
+
 On Day 2, we took **Vaporetto Line 1** and drifted to **Burano**, where pastel houses glowed like joy itself. Back in Venice, we found **Libreria Acqua Alta**, the bookshop of dreams, and climbed the **Contarini del Bovolo** for a hidden view. By evening, **Piazza San Marco** shimmered under golden light — a living painting.
+
+![St Mark’s Square, Venice](/images/blogs/italy/saintmarks-venice.jpeg)
 
 Day 3 began with coffee at a local bar. Inside **St. Mark's Basilica**, mosaics gleamed like captured dawn. A final Vaporetto ride took us to **Santa Lucia Station** — because even departures feel poetic in Venice.
 
@@ -52,6 +62,8 @@ Day 4 began with rain, soft and poetic. We explored **Mercato Centrale**, climbe
 
 ## 🏛 Day 4–5: Pisa – The Square of Miracles
 
+![Leaning Tower of Pisa](/images/blogs/italy/pisa-italy.jpeg)
+
 Our hotel overlooked **Piazza dei Miracoli** — the Leaning Tower, Cathedral, Baptistery, and Camposanto Monumentale standing like a poem in marble. At night, rain kissed the tower; by dawn, it leaned gracefully under sunlit skies.
 
 Pisa isn't just a photo stop — it's balance made beautiful. By noon, we boarded a train to La Spezia, gateway to Cinque Terre.
@@ -59,6 +71,10 @@ Pisa isn't just a photo stop — it's balance made beautiful. By noon, we boarde
 ---
 
 ## 🌊 Days 5–6: Cinque Terre – Colors Carved by the Sea
+
+![Riomaggiore, Cinque Terre](/images/blogs/italy/riomaggiore-cinque-terre-italy.jpeg)
+
+![Manarola, Cinque Terre](/images/blogs/italy/manarola-cinque-terre-italy.jpeg)
 
 We stayed in **Riomaggiore**, where pastel homes tumble toward the waves. From **Monterosso**, we hiked the **Blue Trail** to **Vernazza** — olive groves above, turquoise sea below, and the village revealing itself like a secret.
 

@@ -5,7 +5,7 @@ excerpt: "From Monument Valley to the Grand Canyon, experience the American Sout
 category: "Travel Stories"
 author: "Nodes of Travel"
 image: "🏜️"
-imageUrl: "https://img.youtube.com/vi/V7rEAkFPNfs/maxresdefault.jpg"
+imageUrl: "/images/blogs/usa-southwest/GrandCanyon.jpeg"
 tags: ["usa", "southwest", "road-trip", "grand-canyon", "monument-valley"]
 ---
 # 🌵 The Magical Southwest Road Trip 2025
@@ -13,6 +13,12 @@ tags: ["usa", "southwest", "road-trip", "grand-canyon", "monument-valley"]
 **A 9-Day Adventure Through America's Most Breathtaking Canyons**
 
 ## ✨ Introduction — Where the Desert Meets the Soul
+
+![Grand Canyon](/images/blogs/usa-southwest/GrandCanyon.jpeg)
+
+![Southwest USA](/images/blogs/usa-southwest/usa-southwest.jpeg)
+
+![Zion](/images/blogs/usa-southwest/zion-usa.jpeg)
 
 Picture this: towering red rock canyons, endless desert vistas, and you — at the heart of your own Western epic.
 If you’ve ever dreamed of tracing the horizon across timeless lands, where every curve of stone tells a story and every sunset feels eternal — this is where your journey begins.

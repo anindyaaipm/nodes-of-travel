@@ -5,7 +5,7 @@ excerpt: "Essential Yucatán : A week in the Blue Beaches, Mayan ruins and mysti
 category: "Travel Stories"
 author: "Nodes of Travel"
 image: "🇲🇽"
-imageUrl: "https://img.youtube.com/vi/6FZf_oytyVo/maxresdefault.jpg"
+imageUrl: "/images/blogs/mexico/mexico-yucatan.jpeg"
 tags: ["mexico", "yucatan", "cancun", "isla-mujeres", "valladolid", "chichen-itza"]
 ---
 # 🌵 The Magical Southwest Road Trip
@@ -13,6 +13,8 @@ tags: ["mexico", "yucatan", "cancun", "isla-mujeres", "valladolid", "chichen-itz
 **A Week long Adventure Through Mexico's Yucatan Peninsula**
 
 ## ✨ Essential Yucatán : A week in the Blue Beaches, Mayan ruins and mystic cenotes
+
+![Yucatán, Mexico](/images/blogs/mexico/mexico-yucatan.jpeg)
 
 I will take you through an ultimate 7 day itinerary, where we see stunning blue seas , enigmatic Mayan ruins, walk pastel streets in a Magical town, swim in deep blue cenotes ,  hop on golf carts , take dip at infinity pool, ride a beautiful yellow ferry, mingle with the locals like knowing them forever and enjoy the most scrumptious local cuisines - So friends join us , as over the next few minutes we embark on this energetic journey together - through the beautiful Yucatán peninsula in Mexico. 
 

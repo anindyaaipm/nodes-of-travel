@@ -10,6 +10,7 @@ import {
   guideImageBySlug,
   homeJourneys,
   ourTravelsGrid,
+  blogSlugToDestination,
 } from "./home-data";
 
 function SectionHeader({
@@ -46,8 +47,9 @@ function MeetSection() {
               intro="Where every stop is a story, and every journey connects the world a little more. We film, write, and plan from trips we’ve actually taken — so you can travel with more clarity and wonder."
             />
             <p className="mt-6 max-w-md text-sm leading-relaxed text-muted-foreground md:text-base">
-              Quiet canals, island mornings, desert highways, and whitewashed villages — we don’t
-              just collect destinations. We look for meaning in the moments between them.
+              Quiet canals, island mornings, Rockies lakes, desert highways, and whitewashed
+              villages — we don’t just collect destinations. We look for meaning in the moments
+              between them.
             </p>
             <Link href="/about" className="btn-editorial-primary mt-10">
               About us
@@ -73,6 +75,11 @@ function MeetSection() {
 function JourneysSection() {
   const [featured, ...rest] = homeJourneys;
 
+  const toDestination = (blogSlug: string) => {
+    const slug = blogSlugToDestination[blogSlug];
+    return slug ? `/destinations#${slug}` : "/destinations";
+  };
+
   return (
     <section className="bg-[#f3efe7] py-20 md:py-28">
       <div className="container mx-auto px-4">
@@ -82,22 +89,25 @@ function JourneysSection() {
             title="Find your next journey"
             intro="Real itineraries from places we’ve travelled — filmed and written so you can follow the path, or make it your own."
           />
-          <Link href="/blog" className="btn-editorial-outline-dark shrink-0 self-start md:self-auto">
-            View all journeys
+          <Link
+            href="/destinations"
+            className="btn-editorial-outline-dark shrink-0 self-start md:self-auto"
+          >
+            View destinations
           </Link>
         </div>
 
         <div className="grid gap-6 lg:grid-cols-12 lg:gap-8">
           <Link
-            href={`/blog/${featured.slug}`}
-            className="image-cinematic-zoom group relative min-h-[28rem] overflow-hidden lg:col-span-7 lg:min-h-[36rem]"
+            href={toDestination(featured.slug)}
+            className="image-cinematic-zoom group relative aspect-[16/10] overflow-hidden lg:col-span-7 lg:aspect-auto lg:min-h-[28rem]"
           >
             <Image
               src={featured.image}
               alt={featured.imageAlt}
               fill
               sizes="(max-width: 1024px) 100vw, 58vw"
-              className="image-cinematic object-cover"
+              className="image-cinematic object-cover object-center"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
             <div className="absolute inset-x-0 bottom-0 p-6 md:p-10">
@@ -113,15 +123,15 @@ function JourneysSection() {
             {rest.slice(0, 2).map((journey) => (
               <Link
                 key={journey.slug}
-                href={`/blog/${journey.slug}`}
-                className="image-cinematic-zoom group relative min-h-[16rem] flex-1 overflow-hidden"
+                href={toDestination(journey.slug)}
+                className="image-cinematic-zoom group relative aspect-[16/10] flex-1 overflow-hidden lg:aspect-auto lg:min-h-[13rem]"
               >
                 <Image
                   src={journey.image}
                   alt={journey.imageAlt}
                   fill
                   sizes="(max-width: 1024px) 100vw, 40vw"
-                  className="image-cinematic object-cover"
+                  className="image-cinematic object-cover object-center"
                   unoptimized={journey.image.startsWith("http")}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-transparent" />
@@ -138,15 +148,15 @@ function JourneysSection() {
           {rest.slice(2).map((journey) => (
             <Link
               key={journey.slug}
-              href={`/blog/${journey.slug}`}
-              className="image-cinematic-zoom group relative aspect-[4/5] overflow-hidden"
+              href={toDestination(journey.slug)}
+              className="image-cinematic-zoom group relative aspect-[3/2] overflow-hidden"
             >
               <Image
                 src={journey.image}
                 alt={journey.imageAlt}
                 fill
                 sizes="(max-width: 640px) 100vw, 33vw"
-                className="image-cinematic object-cover"
+                className="image-cinematic object-cover object-center"
                 unoptimized={journey.image.startsWith("http")}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/15 to-transparent" />
@@ -343,7 +353,7 @@ function PlanTripSection() {
     <section className="relative overflow-hidden py-24 md:py-32">
       <div className="absolute inset-0">
         <Image
-          src="/images/destinations/spain-roadtrip.jpeg"
+          src="/images/blogs/canada-banff/banff-sign.JPEG"
           alt="Plan a trip with Nodes of Travel"
           fill
           sizes="100vw"
@@ -381,44 +391,38 @@ function OurTravelsSection() {
           <SectionHeader
             eyebrow="Places"
             title="Our travels"
-            intro="A visual map of places we’ve stood in — each frame opens the story behind it."
+            intro="A visual map of places we’ve stood in — each frame opens that destination."
             align="center"
           />
         </div>
 
-        <div className="grid auto-rows-[12rem] gap-3 sm:auto-rows-[14rem] sm:grid-cols-2 md:gap-4 lg:auto-rows-[16rem] lg:grid-cols-4">
-          {ourTravelsGrid.map((item, index) => {
-            const spanClass =
-              item.span === "wide"
-                ? "sm:col-span-2"
-                : item.span === "tall"
-                  ? "sm:row-span-2 sm:auto-rows-auto min-h-[24rem] lg:min-h-0"
-                  : "";
-
-            return (
-              <Link
-                key={`${item.slug}-${item.label}-${index}`}
-                href={`/blog/${item.slug}`}
-                className={`image-cinematic-zoom group relative overflow-hidden ${spanClass}`}
-              >
+        {/* Same editorial image treatment as Travel Guides (wide frames), slightly different ratio */}
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {ourTravelsGrid.map((item, index) => (
+            <Link
+              key={`${item.destinationSlug}-${item.label}-${index}`}
+              href={`/destinations#${item.destinationSlug}`}
+              className="group"
+            >
+              <div className="image-cinematic-zoom relative aspect-[3/2] overflow-hidden">
                 <Image
                   src={item.image}
                   alt={item.imageAlt}
                   fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  className="image-cinematic object-cover"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="image-cinematic object-cover object-center"
                 />
-                <div className="absolute inset-0 bg-black/0 transition-colors duration-500 group-hover:bg-black/25" />
-                <div className="absolute inset-x-0 bottom-0 translate-y-2 p-4 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-                  <p className="font-display text-xl text-white">{item.label}</p>
-                </div>
-              </Link>
-            );
-          })}
+              </div>
+              <p className="editorial-eyebrow mt-4 mb-1">Destination</p>
+              <h3 className="font-display text-2xl transition-colors group-hover:text-primary">
+                {item.label}
+              </h3>
+            </Link>
+          ))}
         </div>
 
         <div className="mt-12 text-center">
-          <Link href="/blog" className="btn-editorial-outline-dark">
+          <Link href="/destinations" className="btn-editorial-outline-dark">
             Explore destinations
           </Link>
         </div>

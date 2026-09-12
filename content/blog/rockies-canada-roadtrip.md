@@ -5,12 +5,14 @@ excerpt: "A journey through the Canadian Rockies - Banff, Jasper, Yoho National 
 category: "Travel Stories"
 author: "Nodes of Travel"
 image: "🇨🇦"
-imageUrl: "https://img.youtube.com/vi/gznuwZ7IQkI/maxresdefault.jpg"
+imageUrl: "/images/blogs/canada-banff/morraine-lake.JPEG"
 tags: ["banff", "jasper", "yoho", "canada", "travel-vlog", "cinematic"]
 video: "gznuwZ7IQkI"
 ---
 
 There is this one place in Canada to which nothing compares -  its glorious vistas (of Turquoise lakes, ice capped mountains, venerable glaciers , incredible canyons, awe inspiring waterfalls, and a Highway that ) is pretty much an envy of the world ..  Welcome to the Canadian Rockies, to Banff, Jasper and Yoho National Parks.
+
+![Moraine Lake, Banff National Park](/images/blogs/canada-banff/morraine-lake.JPEG)
 
 
 🎥 **[Watch our full Banff - Jasper - Yoho series on Nodes of Travel](/videos#rockies-canada-series)**
@@ -81,6 +83,8 @@ Overnight at Lake Louise or if you really plan well early you can stay at Lake M
 
 ## Day 6 - Get ready to be Mesmerized !!
 Early morning for a sunrise like no other at Lake Moraine.
+
+![A quiet moment at Moraine Lake](/images/blogs/canada-banff/moraine-lake-pose.JPEG)
 🎬 **[Watch the Lake Moraine experience](/videos#3-Kgrrx1pGQ)**
 
 
@@ -95,6 +99,10 @@ Overnight at town of Banff / Canmore.
 
 ## Day 7 - The Real Deal - Banff !!
 Explore Banff Avenue, Cascade gardens before heading towards Bow Falls . Next hop on to the Banff Gondola and the Upper Hot springs..Take a pic near the Banff sign and  wind up with a nice dinner at one of the several restaurants… 
+
+![The Banff sign](/images/blogs/canada-banff/banff-sign.JPEG)
+
+![Stay near Banff / Canmore](/images/blogs/canada-banff/banff-canmore-stay.JPEG)
 
 Overnight at Banff/ Canmore .
 
