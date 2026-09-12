@@ -5,7 +5,7 @@ excerpt: "Andaman Travel Stories"
 category: "Travel Stories"
 author: "Nodes of Travel"
 image: ""
-imageUrl: "https://img.youtube.com/vi/GzLPF_ICZpQ/maxresdefault.jpg"
+imageUrl: "/images/blogs/andaman/Andaman.jpeg"
 tags: ["Andaman","Port Blair","Havelock","Ross Island","Neil Island"]
 ---
 # The Magical Andaman Trip
@@ -14,10 +14,14 @@ tags: ["Andaman","Port Blair","Havelock","Ross Island","Neil Island"]
 
 ## ✨ Andaman : A week of Island Hopping - journey through India's colonial history, White Sand and Blue Waters
 
+![Andaman Islands](/images/blogs/andaman/Andaman.jpeg)
+
 Watch our full Andaman experience : 
 🎬 **[Watch the full story](/videos#GzLPF_ICZpQ)**
 
 ## Day 1-2 
+
+![Port Blair and Andaman shores](/images/blogs/andaman/Andaman2.jpeg)
 Flight Got massively delayed .. after a lot of anxiety we made it to Port Blair . The landing was nothing short of an epic … the colors visible from the flight were an indication of things to come. We had a fabulous stay for the next two nights at a beautiful property with a  mind blowing rooftop terrace .. the views of the North Bay , Ross Island while sipping a hot masala chai was incredible. Today we went to Ross Island  , taking a ferry from right next door at the Aberdeen Jetty.   Ross Island is incredible in that it shows how nature reclaims what is its own. Also a major contrast shows how the British officers spent their leisure - with Clubs and swimming pools - after raining hell at the freedom fighters across the water at the cellular jail … at Ross one would see the deers and peacocks roam freely as you have seen never before . We rented a golf cart and tha makes the navigation easy. At the end it has a beautiful light house. We wrapped up our first day with a cosy time at the hotel terrace. 
 
 🎬 **[Watch the Port Blair story](/videos#rZm94KGVzbI)**
@@ -33,6 +37,8 @@ Next Morning started for Jolly Buoy island. It’s reached via a 45 mins boat ri
 -----
 
 ## Day 3-4
+
+![Havelock Island](/images/blogs/andaman/Havelock.jpeg)
 We started at 6:30am for Haddo Jetty as we had pre booked with Nautica Pro. Nautica, Makruz and Green Ocean (open deck) are the three most popular ferries and I planned to book them all for each leg of our journey. Anyways , Nautica Pro is the newest of their fleet and was a very smooth 2 hrs sail to Swaraj Deep. A stunning jewel, famous for its pristine beaches like Kala Paththar Beach Radhanagar (sunset views) and Elephant Beach (diving/snorkeling), clear turquoise waters, and lush greenery. We hired an auto rickshaw that took us to Kala Pathar beach where Ayush and I swam in the crystal waters. We came back to the hotel changed and spent the sunset time at the amazing Radha Nagar beach. No wonder it’s one of the constantly rated most beautiful beaches in entire Asia. The resort had arrangements for some very assorted dinner which we really needed. 
 
 Next morning was a dream come true for me as I went for my first Scuba diving. It was really incredible… our group was briefly provided an orientation, training us all the signals and then the real deal. It was indeed a life changing experience. I will never forget this day. After coming back we all headed to Elephant beach . The boats leave right from where the jetty is. Bit chaotic but the speed boat ride of 30 mins to the water activity rich Elephant Beach is amazing. Snorkeling was indeed unbelievable.. the quality of marine life we saw was pretty darn good to challenge even my morning scuba experience. By the time we were and on our journey back to the jetty it started raining which was another exciting thrilling experience. Wrapped our long day as we had to leave for Shaheed Deep formerly Neil Island next morning.
@@ -43,6 +49,10 @@ Next morning was a dream come true for me as I went for my first Scuba diving. I
 -----
 
 ## Day 5
+
+![Neil Island](/images/blogs/andaman/Neil.jpeg)
+
+![Stay on Neil Island](/images/blogs/andaman/neil-island-hotel-andaman.jpeg)
 Today morning we spent some nice time at the resort’s private beach. The hammocks, the swing jhula and the colorful water all  memorable. We had booked at Makruzz today and the ride was pretty decent. The white ferry is closed deck just like Nautica. After an hour we reached Shaheed Deep. The color of the water here will strike you the moment you hit the jetty. I bet you haven’t seen water with such amazing shades of turquoise and azure blue as this. Our resort had an amazing pool by its private beach and the experience was unbelievable. Neil Island is a very small island with more chilled vibes. It’s slow pace is something I was craving for and honestly I loved here the most. Maybe next time I will plan a trip only to this island. Don’t know when but for sure some time . After lunch , we headed for Laxmanpur Beach 1 for a natural coral arch formation which is one of its kind. At low tide the coral paths lead up to this and the puddles of water shelters some stellar marine life. Small fish, crabs swimming around- very fascinating. After this we headed straight to Laxmanpur Beach -2 also known as the sunset beach. Now it’s not just a rumor… We witnessed the best - period- the best sunset from here. It’s massively romantic and popular, the whole setting .. Will never forget. 
 
 🎬 **[The stunning Neil Island](/videos#9aowT6nM7rE)**

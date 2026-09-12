@@ -1,134 +1,153 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { Calendar, User, ArrowLeft } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 import { getAllPosts, getPostBySlug } from "@/lib/blog";
+import { guideHeroBySlug } from "@/lib/blog-images";
 import ReactMarkdown from "react-markdown";
 import VideoCard from "@/components/VideoCard";
+import ProseImage from "@/components/editorial/ProseImage";
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
+  return posts.map((post) => ({ slug: post.slug }));
+}
+
+export function generateMetadata({ params }: { params: { slug: string } }) {
+  const post = getPostBySlug(params.slug);
+  if (!post) return { title: "Guide" };
+  return {
+    title: `${post.title} — Nodes of Travel`,
+    description: post.excerpt,
+  };
 }
 
 export default function BlogPost({ params }: { params: { slug: string } }) {
   const post = getPostBySlug(params.slug);
+  if (!post) notFound();
 
-  if (!post) {
-    notFound();
-  }
+  const hero = guideHeroBySlug[post.slug] || post.imageUrl;
 
   return (
-    <div className="container mx-auto px-4 pb-12 pt-24 md:pt-28">
-      <div className="mx-auto max-w-3xl">
-        <Button variant="ghost" asChild className="mb-8">
-          <Link href="/blog">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Blog
-          </Link>
-        </Button>
-
-        <article>
-          <div className="mb-8 text-center">
-            <div className="mb-4 flex flex-wrap items-center justify-center gap-3 text-sm text-muted-foreground">
-              <div className="flex items-center gap-1">
-                <Calendar className="h-4 w-4" />
-                <span>{new Date(post.date).toLocaleDateString()}</span>
-              </div>
-              <span>•</span>
-              <div className="flex items-center gap-1">
-                <User className="h-4 w-4" />
-                <span>{post.author}</span>
-              </div>
-              {post.category && (
-                <>
-                  <span>•</span>
-                  <span className="text-primary">{post.category}</span>
-                </>
-              )}
-            </div>
-            <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">
+    <article className="bg-background pb-20">
+      <div className="relative -mt-[4.25rem] min-h-[55svh] md:-mt-[4.75rem] md:min-h-[65svh]">
+        {hero ? (
+          <>
+            <Image
+              src={hero}
+              alt={post.title}
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover"
+              unoptimized={hero.startsWith("http")}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-black/25" />
+          </>
+        ) : (
+          <div className="absolute inset-0 bg-foreground" />
+        )}
+        <div className="relative z-10 flex min-h-[55svh] items-end md:min-h-[65svh]">
+          <div className="container mx-auto px-4 pb-12 pt-32 md:pb-16 md:pt-40">
+            <Link
+              href="/blog"
+              className="mb-6 inline-block text-xs font-semibold uppercase tracking-[0.16em] text-white/70 transition-colors hover:text-white"
+            >
+              ← All guides
+            </Link>
+            <p className="editorial-eyebrow mb-4 text-white/65">
+              {post.category || "Travel guide"}
+              {post.date
+                ? ` · ${new Date(post.date).toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}`
+                : ""}
+            </p>
+            <h1 className="max-w-4xl font-display text-3xl leading-tight text-white md:text-5xl lg:text-[3.25rem]">
               {post.title}
             </h1>
-            <p className="text-lg text-muted-foreground">{post.excerpt}</p>
+            {post.excerpt ? (
+              <p className="mt-5 max-w-2xl text-base text-white/80 md:text-lg">{post.excerpt}</p>
+            ) : null}
           </div>
+        </div>
+      </div>
 
-          {(post.imageUrl || post.image) && (
-            <div className="mb-8 relative aspect-video rounded-lg overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20">
-              {post.imageUrl ? (
-                <Image
-                  src={post.imageUrl}
-                  alt={post.title}
-                  fill
-                  className="object-cover"
-                  unoptimized
-                />
-              ) : (
-                <div className="flex items-center justify-center h-full text-8xl">
-                  {post.image}
-                </div>
-              )}
-            </div>
-          )}
-
-          <Separator className="mb-8" />
-
-          <div className="prose prose-gray dark:prose-invert max-w-none">
+      <div className="container mx-auto px-4">
+        <div className="mx-auto max-w-3xl py-12 md:py-16">
+          <div className="editorial-prose">
             <ReactMarkdown
               components={{
                 h1: ({ children }) => (
-                  <h1 className="mb-4 mt-8 text-3xl font-bold">{children}</h1>
+                  <h1 className="mb-5 mt-12 font-display text-3xl md:text-4xl">{children}</h1>
                 ),
                 h2: ({ children }) => (
-                  <h2 className="mb-3 mt-6 text-2xl font-bold">{children}</h2>
+                  <h2 className="mb-4 mt-12 font-display text-2xl md:text-3xl">{children}</h2>
                 ),
                 h3: ({ children }) => (
-                  <h3 className="mb-2 mt-4 text-xl font-bold">{children}</h3>
+                  <h3 className="mb-3 mt-8 font-display text-xl md:text-2xl">{children}</h3>
                 ),
                 p: ({ children }) => (
-                  <p className="mb-4 leading-7">{children}</p>
+                  <p className="mb-5 text-base leading-8 text-foreground/85 md:text-[1.05rem]">
+                    {children}
+                  </p>
                 ),
                 ul: ({ children }) => (
-                  <ul className="mb-4 ml-6 list-disc space-y-2">{children}</ul>
+                  <ul className="mb-5 ml-5 list-disc space-y-2 text-foreground/85">{children}</ul>
                 ),
                 ol: ({ children }) => (
-                  <ol className="mb-4 ml-6 list-decimal space-y-2">{children}</ol>
+                  <ol className="mb-5 ml-5 list-decimal space-y-2 text-foreground/85">{children}</ol>
                 ),
-                li: ({ children }) => (
-                  <li className="leading-7">{children}</li>
-                ),
+                li: ({ children }) => <li className="leading-7">{children}</li>,
                 blockquote: ({ children }) => (
-                  <blockquote className="my-4 border-l-4 border-primary pl-4 italic">
+                  <blockquote className="my-8 border-l-2 border-primary pl-5 italic text-muted-foreground">
                     {children}
                   </blockquote>
                 ),
-                code: ({ children }) => (
-                  <code className="rounded bg-muted px-1 py-0.5 font-mono text-sm">
+                a: ({ href, children }) => (
+                  <a
+                    href={href}
+                    className="font-medium text-primary underline-offset-4 hover:underline"
+                  >
                     {children}
-                  </code>
+                  </a>
                 ),
+                img: ({ src, alt }) => {
+                  if (!src || typeof src !== "string") return null;
+                  return <ProseImage src={src} alt={alt || ""} />;
+                },
+                hr: () => <hr className="my-10 border-border/80" />,
+                strong: ({ children }) => (
+                  <strong className="font-semibold text-foreground">{children}</strong>
+                ),
+                em: ({ children }) => <em className="italic text-foreground/80">{children}</em>,
               }}
             >
               {post.content}
             </ReactMarkdown>
           </div>
 
-          {post.video && (
-            <VideoCard
-              videoId={post.video}
-              title="Watch the video version of this story"
-              description="Experience this adventure in motion"
-            />
-          )}
-        </article>
+          {post.video ? (
+            <div className="mt-14">
+              <VideoCard
+                videoId={post.video}
+                title="Watch the film"
+                description="Experience this journey in motion"
+              />
+            </div>
+          ) : null}
+
+          <div className="mt-16 flex flex-col gap-4 border-t border-border pt-10 sm:flex-row sm:items-center sm:justify-between">
+            <Link href="/blog" className="editorial-link">
+              ← More guides
+            </Link>
+            <Link href="/plan-your-trip" className="btn-editorial-primary">
+              Plan Your Trip
+            </Link>
+          </div>
+        </div>
       </div>
-    </div>
+    </article>
   );
 }
-
-
-

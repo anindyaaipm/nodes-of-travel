@@ -5,11 +5,12 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   const explore = [
-    { href: "/blog", label: "Destinations" },
-    { href: "/blog", label: "Journeys" },
+    { href: "/destinations", label: "Destinations" },
+    // Hidden until content types are distinct (do not delete)
+    // { href: "/blog", label: "Journeys" },
     { href: "/blog", label: "Travel Guides" },
     { href: "/videos", label: "Videos" },
-    { href: "/blog", label: "Stories" },
+    // { href: "/blog", label: "Stories" },
   ];
 
   const company = [

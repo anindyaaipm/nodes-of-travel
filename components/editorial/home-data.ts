@@ -43,8 +43,32 @@ export const homeJourneys: HomeJourney[] = [
     name: "Rajasthan",
     place: "Jaipur · Jodhpur · Jaisalmer · Udaipur",
     blurb: "Nine days through forts, desert light, and the land of kings.",
-    image: "/images/destinations/india-rajasthan.jpeg",
+    image: "/images/blogs/rajasthan/india-rajasthan.jpeg",
     imageAlt: "Rajasthan, India",
+  },
+  {
+    slug: "rockies-canada-roadtrip",
+    name: "Canadian Rockies",
+    place: "Banff · Jasper · Yoho",
+    blurb: "Turquoise lakes, icefields and mountain highways through Banff and beyond.",
+    image: "/images/blogs/canada-banff/moraine-lake-pose.JPEG",
+    imageAlt: "Moraine Lake, Canadian Rockies",
+  },
+  {
+    slug: "wonders-of-canada-west-coast",
+    name: "Canada West Coast",
+    place: "Vancouver · Squamish · Whistler",
+    blurb: "Stanley Park seawalls, Sea to Sky, and mountains meeting the Pacific.",
+    image: "/images/blogs/canada-west-coast/vancouver-city.jpeg",
+    imageAlt: "Vancouver, Canada West Coast",
+  },
+  {
+    slug: "wonders-of-canada-east-coast",
+    name: "Maritime Canada",
+    place: "PEI · New Brunswick · Nova Scotia",
+    blurb: "Lighthouses, Cabot Trail curves, and Atlantic light from PEI to Peggy’s Cove.",
+    image: "/images/blogs/canada-maritimes/cabot-trail.jpeg",
+    imageAlt: "Cabot Trail, Maritime Canada",
   },
   {
     slug: "week-in-yucatan-mexico",
@@ -68,16 +92,18 @@ export const homeJourneys: HomeJourney[] = [
 export const featuredVideoIds = [
   "uYj_J8WJmd0", // Italy itinerary
   "lQj1AFTpbCA", // Andalusia
-  "VQYLOV0BjN0", // Porto
-  "GzLPF_ICZpQ", // Andaman
+  "gznuwZ7IQkI", // Canadian Rockies
+  "eXrancqXrPw", // Vancouver / West Coast
 ] as const;
 
 /** Guide slugs to feature (must exist in content/blog) */
 export const featuredGuideSlugs = [
   "7-days-andalusia-cinematic-journey",
   "portugal-travel-series",
+  "rockies-canada-roadtrip",
+  "wonders-of-canada-east-coast",
   "week-in-andaman",
-  "10-days-italy-cinematic-journey",
+  "9-days-rajasthan-cinematic-journey",
 ] as const;
 
 /** Local image overrides for guide cards when available */
@@ -85,70 +111,121 @@ export const guideImageBySlug: Record<string, string> = {
   "7-days-andalusia-cinematic-journey": "/images/destinations/granada.jpeg",
   "portugal-travel-series": "/images/destinations/sintra-moorish.jpeg",
   "week-in-andaman": "/images/destinations/andaman-sunrise.jpeg",
-  "9-days-rajasthan-cinematic-journey": "/images/destinations/india-rajasthan.jpeg",
+  "9-days-rajasthan-cinematic-journey": "/images/blogs/rajasthan/india-rajasthan.jpeg",
   "week-in-yucatan-mexico": "/images/destinations/mexico-yucatan.jpeg",
   "southwest-usa-roadtrip": "/images/destinations/grand-canyon.jpeg",
+  "rockies-canada-roadtrip": "/images/blogs/canada-banff/moraine-lake-pose.JPEG",
+  "wonders-of-canada-east-coast": "/images/blogs/canada-maritimes/cabot-trail.jpeg",
+  "wonders-of-canada-west-coast": "/images/blogs/canada-west-coast/vancouver-city.jpeg",
+  "10-days-italy-cinematic-journey": "/images/blogs/italy/venice.jpeg",
 };
 
 export type TravelGridItem = {
   slug: string;
+  destinationSlug: string;
   label: string;
   image: string;
   imageAlt: string;
-  span?: "wide" | "tall" | "normal";
 };
 
-/** Our Travels mosaic — every item links to an existing story */
+/** Our Travels — landscape place stills linking to destination hubs */
 export const ourTravelsGrid: TravelGridItem[] = [
   {
     slug: "week-in-andaman",
+    destinationSlug: "andaman",
     label: "Havelock",
     image: "/images/destinations/havelock.jpeg",
     imageAlt: "Havelock Island, Andaman",
-    span: "wide",
+  },
+  {
+    slug: "week-in-andaman",
+    destinationSlug: "andaman",
+    label: "Andaman sunrise",
+    image: "/images/destinations/andaman-sunrise.jpeg",
+    imageAlt: "Sunrise in the Andaman Islands",
   },
   {
     slug: "7-days-andalusia-cinematic-journey",
+    destinationSlug: "spain-andalusia",
     label: "Seville",
     image: "/images/destinations/seville-cathedral.jpeg",
     imageAlt: "Seville Cathedral",
   },
   {
     slug: "7-days-andalusia-cinematic-journey",
+    destinationSlug: "spain-andalusia",
     label: "Ronda",
     image: "/images/destinations/ronda-puente-nuevo.jpeg",
     imageAlt: "Puente Nuevo, Ronda",
-    span: "tall",
   },
   {
     slug: "portugal-travel-series",
+    destinationSlug: "portugal",
     label: "Sintra",
     image: "/images/destinations/sintra-moorish.jpeg",
     imageAlt: "Moorish Castle, Sintra",
   },
   {
-    slug: "week-in-andaman",
-    label: "Neil Island",
-    image: "/images/destinations/neil-lakshmanpur.jpeg",
-    imageAlt: "Lakshmanpur Beach, Neil Island",
-  },
-  {
     slug: "7-days-andalusia-cinematic-journey",
+    destinationSlug: "spain-andalusia",
     label: "Granada",
     image: "/images/destinations/granada.jpeg",
     imageAlt: "Granada, Spain",
-    span: "wide",
   },
   {
-    slug: "7-days-andalusia-cinematic-journey",
-    label: "Spain roads",
-    image: "/images/destinations/spain-roadtrip.jpeg",
-    imageAlt: "Andalusia road trip",
+    slug: "rockies-canada-roadtrip",
+    destinationSlug: "canadian-rockies",
+    label: "Banff",
+    image: "/images/blogs/canada-banff/banff-sign.JPEG",
+    imageAlt: "Banff, Canadian Rockies",
   },
   {
-    slug: "7-days-andalusia-cinematic-journey",
-    label: "El Tajo",
-    image: "/images/destinations/rondacasaeltajo.jpeg",
-    imageAlt: "Ronda El Tajo gorge",
+    slug: "rockies-canada-roadtrip",
+    destinationSlug: "canadian-rockies",
+    label: "Moraine Lake",
+    image: "/images/blogs/canada-banff/moraine-lake-pose.JPEG",
+    imageAlt: "Moraine Lake, Banff",
+  },
+  {
+    slug: "wonders-of-canada-west-coast",
+    destinationSlug: "canada-west",
+    label: "Vancouver",
+    image: "/images/blogs/canada-west-coast/vancouver-lionsgate-bridge.jpeg",
+    imageAlt: "Lions Gate Bridge, Vancouver",
+  },
+  {
+    slug: "wonders-of-canada-east-coast",
+    destinationSlug: "canada-east",
+    label: "Cabot Trail",
+    image: "/images/blogs/canada-maritimes/cabot-trail.jpeg",
+    imageAlt: "Cabot Trail, Nova Scotia",
+  },
+  {
+    slug: "wonders-of-canada-east-coast",
+    destinationSlug: "canada-east",
+    label: "Lunenburg",
+    image: "/images/blogs/canada-maritimes/lunenberg-nova-scotia.jpeg",
+    imageAlt: "Lunenburg, Nova Scotia",
+  },
+  {
+    slug: "wonders-of-canada-west-coast",
+    destinationSlug: "canada-west",
+    label: "Sea to Sky",
+    image: "/images/blogs/canada-west-coast/sea-to-sky-highway-squamish-gondola.jpeg",
+    imageAlt: "Sea to Sky Highway, Squamish",
   },
 ];
+
+/** Map guide/blog slug → destinations hub slug */
+export const blogSlugToDestination: Record<string, string> = {
+  "portugal-travel-series": "portugal",
+  "7-days-andalusia-cinematic-journey": "spain-andalusia",
+  "10-days-italy-cinematic-journey": "italy",
+  "week-in-andaman": "andaman",
+  "9-days-rajasthan-cinematic-journey": "rajasthan",
+  "week-in-yucatan-mexico": "yucatan",
+  "southwest-usa-roadtrip": "southwest-usa",
+  "rockies-canada-roadtrip": "canadian-rockies",
+  "wonders-of-canada-west-coast": "canada-west",
+  "wonders-of-canada-east-coast": "canada-east",
+};

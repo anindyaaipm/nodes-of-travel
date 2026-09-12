@@ -1,89 +1,88 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable react/jsx-no-literals */
-
 import Link from "next/link";
 import Image from "next/image";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Calendar, User, ArrowRight } from "lucide-react";
 import { getAllPosts } from "@/lib/blog";
+import { guideHeroBySlug } from "@/lib/blog-images";
+
+export const metadata = {
+  title: "Travel Guides — Nodes of Travel",
+  description: "Written travel guides and itineraries from journeys we've taken around the world.",
+};
 
 export default function BlogPage() {
   const posts = getAllPosts();
 
   return (
-    <div className="container mx-auto px-4 pb-12 pt-24 md:pt-28">
-      <div className="mb-12 text-center">
-        <h1 className="mb-4 text-4xl font-bold tracking-tight">Travel Blog</h1>
-        <p className="text-lg text-muted-foreground">
-          Stories, tips, and guides from around the world
-        </p>
-      </div>
+    <div className="bg-background pb-20 pt-24 md:pb-28 md:pt-28">
+      <div className="container mx-auto px-4">
+        <div className="mx-auto mb-14 max-w-2xl text-center md:mb-16">
+          <p className="editorial-eyebrow mb-4">Written journeys</p>
+          <h1 className="font-display text-4xl md:text-5xl">Travel Guides</h1>
+          <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
+            Day-by-day routes and place notes that accompany our films — from real trips, not
+            templates.
+          </p>
+        </div>
 
-      {posts.length === 0 ? (
-        <Card className="mx-auto max-w-2xl">
-          <CardHeader>
-            <CardTitle>No Posts Yet</CardTitle>
-            <CardDescription>
-              Check back soon for travel stories and tips!
-            </CardDescription>
-          </CardHeader>
-        </Card>
-      ) : (
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {posts.map((post) => (
-            <Link key={post.slug} href={`/blog/${post.slug}`} className="block">
-              <Card className="group overflow-hidden transition-all hover:shadow-2xl cursor-pointer h-full card-gradient">
-                <div className="relative aspect-video bg-gradient-to-br from-primary/20 to-secondary/20">
-                  {post.imageUrl ? (
-                    <Image
-                      src={post.imageUrl}
-                      alt={post.title}
-                      fill
-                      className="object-cover"
-                      unoptimized
-                    />
-                  ) : (
-                    <div className="flex items-center justify-center h-full text-6xl">
-                      {post.image}
-                    </div>
-                  )}
-                </div>
-                <CardHeader>
-                  <div className="mb-2 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
-                    <div className="flex items-center gap-1">
-                      <Calendar className="h-4 w-4" />
-                      <span>{new Date(post.date).toLocaleDateString()}</span>
-                    </div>
-                    <span>•</span>
-                    <div className="flex items-center gap-1">
-                      <User className="h-4 w-4" />
-                      <span>{post.author}</span>
-                    </div>
-                    {post.category && (
-                      <>
-                        <span>•</span>
-                        <span className="text-primary">{post.category}</span>
-                      </>
+        {posts.length === 0 ? (
+          <p className="text-center text-muted-foreground">Guides coming soon.</p>
+        ) : (
+          <div className="space-y-12 md:space-y-16">
+            {posts.map((post, index) => {
+              const hero = guideHeroBySlug[post.slug] || post.imageUrl;
+              const reverse = index % 2 === 1;
+
+              return (
+                <Link
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="group grid items-center gap-8 md:grid-cols-12 md:gap-12"
+                >
+                  <div
+                    className={`image-cinematic-zoom relative aspect-[16/10] overflow-hidden md:col-span-6 ${
+                      reverse ? "md:order-2" : ""
+                    }`}
+                  >
+                    {hero ? (
+                      <Image
+                        src={hero}
+                        alt={post.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        className="image-cinematic object-cover"
+                        unoptimized={hero.startsWith("http")}
+                      />
+                    ) : (
+                      <div className="flex h-full items-center justify-center bg-muted text-5xl">
+                        {post.image || "✦"}
+                      </div>
                     )}
                   </div>
-                  <CardTitle className="group-hover:text-primary transition-colors">
-                    {post.title}
-                  </CardTitle>
-                  <CardDescription>{post.excerpt}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="inline-flex items-center text-sm font-medium text-primary group-hover:underline">
-                    Read More <ArrowRight className="ml-1 h-3 w-3" />
+                  <div className={`md:col-span-6 ${reverse ? "md:order-1" : ""}`}>
+                    <p className="editorial-eyebrow mb-3">
+                      {post.category || "Travel guide"}
+                      {post.date
+                        ? ` · ${new Date(post.date).toLocaleDateString("en-US", {
+                            year: "numeric",
+                            month: "short",
+                          })}`
+                        : ""}
+                    </p>
+                    <h2 className="font-display text-2xl leading-snug transition-colors group-hover:text-primary md:text-3xl">
+                      {post.title}
+                    </h2>
+                    <p className="mt-4 max-w-lg text-base leading-relaxed text-muted-foreground line-clamp-3">
+                      {post.excerpt}
+                    </p>
+                    <span className="mt-6 inline-block text-xs font-semibold uppercase tracking-[0.16em] text-primary">
+                      Read guide
+                    </span>
                   </div>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
-        </div>
-      )}
+                </Link>
+              );
+            })}
+          </div>
+        )}
+      </div>
     </div>
   );
 }
-
-
-

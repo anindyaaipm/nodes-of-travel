@@ -5,7 +5,7 @@ excerpt: "Portugal Itinerary 🇵🇹 5 Days in Porto, Lisbon & Sintra"
 category: "Travel Stories"
 author: "Nodes of Travel"
 image: "🇵🇹"
-imageUrl: "https://img.youtube.com/vi/VQYLOV0BjN0/maxresdefault.jpg"
+imageUrl: "/images/blogs/portugal/portugal.jpeg"
 tags: ["portugal", "lisbon", "porto", "sintra", "azenhas-do-mar", "cinematic"]
 ---
 
@@ -20,6 +20,8 @@ A flourishing trading port for centuries, Porto’s shot to fame came by exporti
 While Porto is still famous for its wine, there are a ton of other reasons why Porto is a must visit travel destination.
 From its stunning old town , to its authentic cuisine, and romantic viewpoints, Porto has so much to offer .
 
+![Porto, Portugal](/images/blogs/portugal/portugal.jpeg)
+
 -----
 -----
 
@@ -27,6 +29,10 @@ From its stunning old town , to its authentic cuisine, and romantic viewpoints, 
 ##Capela das Almas - Our first stop was the beautiful Capela das Almas.
 Covered in thousands of blue azulejo tiles, this chapel, also known as the Chapel of Souls,  instantly felt like the perfect introduction to the city.
 The blue-and-white panels here depict various historic scenes.
+
+![Blue azulejo tiles, Porto](/images/blogs/portugal/blue-tiles-porto.jpeg)
+
+![Azulejos in Porto](/images/blogs/portugal/porto-azelujos.jpeg)
 
 
 A Brasileira Café - 
@@ -51,6 +57,8 @@ Dom Luís I Bridge - This is one of Porto’s most iconic experiences — walkin
 And honestly… this isn’t just a bridge. It’s the heartbeat of the city.
 On one side — Porto. On the other — Vila Nova de Gaia.
 And below, the Douro River quietly flowing through it all.
+
+![Dom Luís I Bridge, Porto](/images/blogs/portugal/dum-luis-porto.jpeg)
 
 
 Jardim do Morro Sunset - By evening, we reached Jardim do Morro.
@@ -219,6 +227,10 @@ The moment you arrive in Sintra, you immediately realize two things.
 First — this place is absolutely beautiful. And second — your legs are about to get tested.
 
 ## Pena Palace
+
+![Pena Palace, Sintra](/images/blogs/portugal/pena-sintra.jpeg)
+
+![Sintra, Portugal](/images/blogs/portugal/Sintra.jpeg)
 This colourful, eccentric palace perched atop a hill is the poster child of Sintra, it’s the definition of Instagram worthy. Its vibrant yellows and reds make it look like a child’s crayon drawing come to life. The views from up here are spectacular – on a clear day, you can see all the way to Lisbon!
 
 ## Quinta da Regaleira
@@ -238,6 +250,8 @@ Try the local speciality, Travesseiros – flaky pastries filled with almond cre
 
 We then hopped on a Bolt to the beautiful Atlantic Coast , which is just 15 mins away. 
 ## Azenhas do Mar Sunset
+
+![Azenhas do Mar near Lisbon](/images/blogs/portugal/azenhas-do-mar-lisbon.jpeg)
 A tiny whitewashed village sitting dramatically above the ocean.
 As the sun slowly disappeared into the ocean, everything became quiet.
 Just cliffs, waves, golden light… and that strange feeling you get when a trip turns into a memory before it’s even over.
@@ -248,6 +262,8 @@ Just cliffs, waves, golden light… and that strange feeling you get when a trip
 -----
 
 ## FOOD
+
+![Francesinha in Porto](/images/blogs/portugal/francesinha-porto.jpeg)
 No trip to Lisbon is complete without indulging in the local cuisine. Here are some must-tries:
 * Pastéis de Nata: These custard tarts are Lisbon’s most famous treat. Try them at Pastéis de Belém for the original recipe.
 * Bacalhau: Salted cod is a Portuguese staple. You’ll find it prepared in countless ways.

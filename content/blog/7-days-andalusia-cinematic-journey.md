@@ -5,7 +5,7 @@ excerpt: "The Ultimate Southern Spain Itinerary"
 category: "Travel Stories"
 author: "Nodes of Travel"
 image: "🇪🇸"
-imageUrl: "https://img.youtube.com/vi/lQj1AFTpbCA/maxresdefault.jpg"
+imageUrl: "/images/blogs/spain/Seville.jpeg"
 tags: ["Spain", "Seville", "Cordoba", "Granada", "AlHambra", "Ronda", "setenil", "Andalusia"]
 ---
 
@@ -17,6 +17,8 @@ Tucked away in the south of Spain, the remarkable region of Andalusia feels like
 
 We'll take you through the exact route we followed—from the vibrant streets of Seville to the timeless beauty of Córdoba, the magic of Granada, and finally two of Andalusia's most spectacular white villages: Ronda and Setenil de las Bodegas.
 If you're planning your first trip to southern Spain...this itinerary is for you.
+
+![Andalusia, southern Spain](/images/blogs/spain/spain-andalusia.jpeg)
 
 
 We explored this incredible region over six unforgettable days, although if your schedule allows, I'd strongly recommend stretching it into a week. A little extra time lets you slow down and truly enjoy places like Seville and Granada.
@@ -50,6 +52,8 @@ Even after seeing countless photographs beforehand, standing here in person was 
 The sweeping canal...the colourful ceramic benches...the elegant bridges...
 and the sheer scale of the architecture make it one of the most beautiful public squares we've visited anywhere in Europe.
 
+![Plaza de España, Seville](/images/blogs/spain/plaza-espana-seville.jpeg)
+
 As the golden light softened, we found ourselves strolling along the banks of the Guadalquivir River.
 Passing the historic Torre del Oro and crossing the elegant Triana Bridge, the city seemed to slow to an entirely different rhythm.
 
@@ -74,6 +78,10 @@ In Seville, there was one final experience we couldn't miss. Las Setas.
 Officially known as the Metropol Parasol, this remarkable wooden structure offers one of the finest panoramic views across the city.
 We timed our visit for late afternoon  and watching the city transform from day into evening felt like the perfect farewell.
 
+![Las Setas, Seville](/images/blogs/spain/setas-seville.jpeg)
+
+![Tapas in Seville](/images/blogs/spain/tapas-seville-spain.jpeg)
+
 🎬 **[Watch the Seville story](/videos#Td4Yvmd0T1g)**
 
 
@@ -83,6 +91,8 @@ With Seville behind us, it was time for the next chapter.
 -----
 
 ## 🇪🇸 DAY 3 — CÓRDOBA
+
+![Roman Bridge, Córdoba](/images/blogs/spain/cordoba-roman-bridge.jpeg)
 One of the things we loved most about this itinerary was how easy it was to travel between the major cities. 
 Spain's high-speed trains made the journey to Córdoba incredibly comfortable, leaving us free to simply enjoy the changing landscapes along the way.
 
@@ -132,6 +142,8 @@ Just when we thought we understood Andalusia...it surprised us again. Our next s
 -----
 
 ## 🇪🇸 DAY 4 — GRANADA
+
+![Granada, Spain](/images/blogs/spain/Granada.jpeg)
 
 If Córdoba feels timeless...Granada feels mysterious.
 From the moment we stepped into its streets... there was something different about the atmosphere.
@@ -195,6 +207,12 @@ Tomorrow...the city had saved its greatest masterpiece for last. The Alhambra.
 -----
 
 ## 🇪🇸 DAY 5 — THE ALHAMBRA
+
+![The Alhambra, Granada](/images/blogs/spain/AlHambra.jpeg)
+
+![Nasrid Palaces, Alhambra](/images/blogs/spain/Nasrid.jpeg)
+
+![Alcazaba, Granada](/images/blogs/spain/AlCazaba.jpeg)
 Day Five of our Andalusia journey began with the experience we'd been looking forward to the most...By now, Andalusia had already surprised us more than once...
 This morning was dedicated to a place that had inspired this entire trip from the very beginning. The Alhambra.
 
@@ -248,6 +266,10 @@ The destination? A place many consider one of Spain's most beautiful towns. Rond
 
 
 ## 🇪🇸 DAY 5 EVENING — RONDA
+
+![Ronda, Spain](/images/blogs/spain/Ronda.jpeg)
+
+![Puente Nuevo viewpoint, Ronda](/images/blogs/spain/puente-nuevo-viewpoint-ronda.jpeg)
 Every now and then... a place appears that makes you stop walking altogether. Ronda was exactly that.Perched dramatically above the El Tajo Gorge... and divided by one of the most spectacular bridges anywhere in Europe...it almost doesn't look real.
 
 And somehow...our hotel offered the most incredible front-row seat imaginable . Waking up to the Puente Nuevo outside our window... with the gorge stretching far below... felt almost surreal.
@@ -263,6 +285,10 @@ Many visitors arrive for a few hours...take their photographs... and leave. But 
 -----
 
 ## 🇪🇸 DAY 6 — Ronda & Setenil de las Bodegas
+
+![Setenil de las Bodegas](/images/blogs/spain/Setenil.jpeg)
+
+![Stay in Ronda](/images/blogs/spain/RondaHotel.jpeg)
 Our final morning in Andalusia began before sunrise. Standing near the Arco del Cristo...watching the first light slowly reach the Puente Nuevo...
 was one of those travel moments we'll never forget. The town was almost silent.
 And for a little while... it felt as though we had Ronda entirely to ourselves.

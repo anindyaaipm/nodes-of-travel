@@ -46,7 +46,7 @@ export default function HomeHero() {
             className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center animate-fade-up"
             style={{ animationDelay: "0.55s" }}
           >
-            <Link href="/blog" className="btn-editorial-secondary">
+            <Link href="/destinations" className="btn-editorial-secondary">
               Explore Destinations
             </Link>
             <Link

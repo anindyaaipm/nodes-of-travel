@@ -5,7 +5,7 @@ excerpt: "Rajasthan, India – A Journey Through the Land of Kings"
 category: "Travel Stories"
 author: "Nodes of Travel"
 image: ""
-imageUrl: "https://img.youtube.com/vi/vwMzTIkQakY/maxresdefault.jpg"
+imageUrl: "/images/blogs/rajasthan/india-rajasthan.jpeg"
 tags: ["jaipur", "jodhpur", "jaisalmer", "udaipur", "rajasthan", "chittorgarh", "travel-vlog", "cinematic"]
 ---
 
@@ -13,6 +13,8 @@ tags: ["jaipur", "jodhpur", "jaisalmer", "udaipur", "rajasthan", "chittorgarh", 
 *Rajasthan, India – A Journey Through the Land of Kings*
 
 ## 🎬 Introduction
+
+![Rajasthan — Land of Kings](/images/blogs/rajasthan/india-rajasthan.jpeg)
 
 Rajasthan in 9 Days – A Journey Through the Land of Kings
 
@@ -30,6 +32,10 @@ In this 9-day journey, we explore the vibrant heart of Rajasthan — from the ro
 We took an early morning flight from Kolkata and landed in Jaipur, famously known as The Pink City.
 Our first stop was the beautifully ornate Patrika Gate, an architectural masterpiece that welcomes you with colors and culture from across Rajasthan.
 
+![Patrika Gate, Jaipur](/images/blogs/rajasthan/patrika-gate-jaipur.jpeg)
+
+![Autoride through Jaipur](/images/blogs/rajasthan/jaipur-autoride.jpeg)
+
 We checked into Dera Rawatsar Heritage Hotel, a charming haveli-style stay in the city center — traditional, elegant, and warm.
 
 Post refreshment, we headed to the iconic Hawa Mahal. With its honeycomb windows and pink façade, it’s the symbol of Jaipur. The best views are from Tattoo Café or Wind View Café right opposite the palace.
@@ -43,6 +49,8 @@ We first stopped at Jal Mahal, floating gracefully in the middle of Man Sagar La
 
 Next, we explored the majestic Amer Fort — Jaipur’s crown jewel. The elephant ride up to the fort made us feel like royalty, and inside, its courtyards and mirror work were mesmerizing. Don’t miss Diwan-e-Aam, Diwan-e-Khas, and Sheesh Mahal.
 
+![Amer Fort, Jaipur](/images/blogs/rajasthan/jaipur-amer-fort.jpeg)
+
 After Amer, we stopped at the geometric beauty of Panna Meena ka Kund, then visited Jantar Mantar (an astronomical wonder) and the City Palace, rich with history and artifacts of Jaipur’s royal lineage.
 
 As night fell, we boarded the Leelan Express for an overnight journey to the golden city of Jaisalmer.
@@ -55,9 +63,15 @@ As night fell, we boarded the Leelan Express for an overnight journey to the gol
 ## Day 3 – Jaisalmer: The Golden City
 
 At dawn, the first rays of sunlight kissed the golden walls of Jaisalmer Fort, greeting us into the Thar Desert.
+
+![Jaisalmer Fort — the Golden City](/images/blogs/rajasthan/jaisalmer-golden-fort.jpeg)
+
+![Sonar Kella, Jaisalmer](/images/blogs/rajasthan/jaisalmer-sonar-kella.jpeg)
 We stayed at Hotel The Surya, located inside the fort — the sunrise views from the rooftop were unforgettable.
 
 We explored Jaisalmer Fort, Canon View Point, and Dussehra Chowk, followed by the beautifully carved Jain Temples.
+
+![Exploring Jaisalmer with our guide Ram](/images/blogs/rajasthan/jaisalmer-ram-guide.jpeg)
 Outside the fort, Patwon Ki Haveli stole our hearts with its intricate stonework and lattice windows.
 
 Later, we visited Bada Bagh, home to royal cenotaphs, which turned golden under the setting sun — a photographer’s dream.
@@ -69,6 +83,12 @@ After exploring the Raja and Rani Mahal in Dussehra Chowk, we checked out from o
 On the way, we visited the peaceful Amar Sagar Jain Temple, known for its exquisite carvings.
 
 Evening brought thrill and beauty — dune bashing, ATV rides, and a camel safari as the sun melted into the golden desert.
+
+![Thar Desert near Jaisalmer](/images/blogs/rajasthan/jaisalmer-thar.jpeg)
+
+![Camel ride in the Thar](/images/blogs/rajasthan/thar-camel-ride.jpeg)
+
+![Camel safari at dusk](/images/blogs/rajasthan/jaisalmer-camelride.jpeg)
 At night, our desert camp came alive with cultural performances and folk songs — the true spirit of Rajasthan under the open sky.
 
 
@@ -80,7 +100,13 @@ At night, our desert camp came alive with cultural performances and folk songs �
 ## Day 5 – Jodhpur: The Blue City
 
 We began our day with a camel ride at sunrise before driving to Jodhpur, the city of royal blue walls.
+
+![Sunrise over the Thar Desert](/images/blogs/rajasthan/sunrise-thar-desert.jpeg)
 We stayed at Krishna Prakash Heritage Haveli, offering heritage charm and local warmth.
+
+![Our heritage stay in Jodhpur](/images/blogs/rajasthan/jodhpur-hotel.jpeg)
+
+![The Blue City, Jodhpur](/images/blogs/rajasthan/blue-city-jodhpur.jpeg)
 
 Evening walks through the Blue alleys and views from Pachetiya Hills were magical.
 Later, the Clock Tower Market invited us into its lively chaos — we tasted Shahi Samosa, Mirchi Vada, and Rabri Roti at Vijay Restaurant, and ended with sweets from Mohanji Mithaiwala.
@@ -91,6 +117,8 @@ Morning began at Toor Ji Ka Jhalra, an ancient stepwell with stunning symmetry.
 We then explored Jaswant Thada, the marble memorial often called the “Taj Mahal of Marwar.”
 
 The highlight was Mehrangarh Fort — majestic, towering, and steeped in history. The museum, cannons, and views of the blue city were breathtaking.
+
+![Mehrangarh Fort overlooking Jodhpur](/images/blogs/rajasthan/jodhpur-mehrangarh-fort.jpeg)
 Later, we stopped by Umaid Bhawan Palace and ended our day at Mandore Gardens, the ancient capital of Marwar.
 
 
@@ -103,13 +131,21 @@ Later, we stopped by Umaid Bhawan Palace and ended our day at Mandore Gardens, t
 Our next leg took us toward Udaipur, the City of Lakes. En route, we stopped at Ranakpur Jain Temple, an architectural masterpiece set amidst the Aravallis. Its 1,444 intricately carved pillars, each unique, are a sight to behold.
 
 Arriving in Udaipur, we checked into Lake Pichola Hotel — a stunning heritage property right by the lake.
+
+![Welcome to Udaipur, City of Lakes](/images/blogs/rajasthan/udaipur-welcome.jpeg)
 The evening was magical with a boat pickup from Doodhtalai, giving us cinematic views of Udaipur’s skyline.
 We visited Gangaur Ghat and ended our evening with the Bagore Ki Haveli cultural show, followed by dinner at Upré overlooking the shimmering Lake Pichola.
+
+![Dharohar cultural evening, Udaipur](/images/blogs/rajasthan/dharohar-udaipur.jpeg)
+
+![Folk performance at Dharohar](/images/blogs/rajasthan/dharohar-culturalshow-udaipur.jpeg)
 
 ## Day 8 – Exploring the City of Lakes
 
 We began early at Ambrai Ghat to witness a magical sunrise.
 Later, we visited Fateh Sagar Lake, Saheliyon Ki Bari, and Jagdish Temple, followed by the majestic City Palace — the largest in Rajasthan.
+
+![City Palace, Udaipur](/images/blogs/rajasthan/udaipur-city-palace.jpeg)
 
 The grandeur, stories of Maharana Pratap, and breathtaking lake views made this palace the highlight of Udaipur.
 As evening descended, we took a sunset boat ride on Lake Pichola — a moment where the city’s lights danced upon the water, ending our day on a poetic note.

@@ -7,11 +7,12 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { href: "/blog", label: "Destinations" },
-  { href: "/blog", label: "Journeys" },
+  { href: "/destinations", label: "Destinations" },
+  // Hidden until content types are distinct (do not delete)
+  // { href: "/blog", label: "Journeys" },
   { href: "/blog", label: "Travel Guides" },
   { href: "/videos", label: "Videos" },
-  { href: "/blog", label: "Stories" },
+  // { href: "/blog", label: "Stories" },
 ];
 
 const Navbar = () => {
