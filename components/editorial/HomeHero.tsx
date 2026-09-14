@@ -7,7 +7,7 @@ import Link from "next/link";
  */
 export default function HomeHero() {
   return (
-    <section className="relative -mt-[4.25rem] flex min-h-[100svh] items-end overflow-hidden bg-foreground md:-mt-[4.75rem]">
+    <section className="relative -mt-[4.5rem] flex min-h-[100svh] items-end overflow-hidden bg-foreground md:-mt-[5rem]">
       <div className="absolute inset-0 animate-image-reveal">
         <Image
           src="/images/hero/home-hero.jpeg"

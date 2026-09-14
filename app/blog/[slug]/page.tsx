@@ -29,7 +29,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
 
   return (
     <article className="bg-background pb-20">
-      <div className="relative -mt-[4.25rem] min-h-[55svh] md:-mt-[4.75rem] md:min-h-[65svh]">
+      <div className="relative -mt-[4.5rem] min-h-[55svh] md:-mt-[5rem] md:min-h-[65svh]">
         {hero ? (
           <>
             <Image

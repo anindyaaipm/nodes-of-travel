@@ -16,7 +16,7 @@ export default function DestinationsPage() {
           <p className="editorial-eyebrow mb-4">Explore</p>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl">Destinations</h1>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
-            Click a destination to watch our videos or read our guides from that part of the world.
+            Open a destination for films, guides, and place photography from trips we&apos;ve taken.
           </p>
         </header>
 
@@ -54,7 +54,10 @@ export default function DestinationsPage() {
                     id={place.slug}
                     className="group flex scroll-mt-28 flex-col"
                   >
-                    <div className="image-cinematic-zoom relative aspect-[16/10] overflow-hidden bg-muted">
+                    <Link
+                      href={`/destinations/${place.slug}`}
+                      className="image-cinematic-zoom relative aspect-[16/10] overflow-hidden bg-muted"
+                    >
                       <Image
                         src={place.image}
                         alt={place.imageAlt}
@@ -63,13 +66,23 @@ export default function DestinationsPage() {
                         className="image-cinematic object-cover object-center"
                         unoptimized={place.image.startsWith("http")}
                       />
-                    </div>
+                    </Link>
 
                     <div className="mt-5 flex flex-1 flex-col">
-                      <h3 className="font-display text-2xl leading-snug">{place.name}</h3>
+                      <Link href={`/destinations/${place.slug}`}>
+                        <h3 className="font-display text-2xl leading-snug transition-colors group-hover:text-primary">
+                          {place.name}
+                        </h3>
+                      </Link>
                       <p className="mt-2 text-sm text-muted-foreground">{place.subtitle}</p>
 
                       <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 border-t border-border/60 pt-4">
+                        <Link
+                          href={`/destinations/${place.slug}`}
+                          className="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-foreground/80 transition-colors hover:text-primary"
+                        >
+                          View destination
+                        </Link>
                         {place.playlistId ? (
                           <Link
                             href={`/videos#${place.playlistId}`}
