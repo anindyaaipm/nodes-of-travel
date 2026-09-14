@@ -29,7 +29,7 @@ export default function AboutPage() {
 
   return (
     <div className="bg-background">
-      <section className="relative -mt-[4.25rem] flex min-h-[70svh] items-end overflow-hidden md:-mt-[4.75rem] md:min-h-[75svh]">
+      <section className="relative -mt-[4.5rem] flex min-h-[70svh] items-end overflow-hidden md:-mt-[5rem] md:min-h-[75svh]">
         <Image
           src="/images/about/about-story.jpeg"
           alt="Nodes of Travel — our story"

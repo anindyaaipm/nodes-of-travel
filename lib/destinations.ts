@@ -3,6 +3,12 @@
  * Structure inspired by travel-publication destination indexes (region → place cards).
  */
 
+export type DestinationExploreItem = {
+  label: string;
+  image: string;
+  imageAlt: string;
+};
+
 export type DestinationPlace = {
   slug: string;
   name: string;
@@ -11,6 +17,8 @@ export type DestinationPlace = {
   imageAlt: string;
   blogSlug?: string;
   playlistId?: string;
+  /** Optional place stills for destination detail “Explore” grids — real local photos only */
+  explore?: DestinationExploreItem[];
 };
 
 export type DestinationRegion = {
@@ -65,6 +73,23 @@ export const destinationRegions: DestinationRegion[] = [
         imageAlt: "Andaman Islands",
         blogSlug: "week-in-andaman",
         playlistId: "andaman-series",
+        explore: [
+          {
+            label: "Port Blair",
+            image: "/images/blogs/andaman/Andaman2.jpeg",
+            imageAlt: "Port Blair and Andaman shores",
+          },
+          {
+            label: "Havelock",
+            image: "/images/destinations/havelock.jpeg",
+            imageAlt: "Havelock Island, Andaman",
+          },
+          {
+            label: "Andaman sunrise",
+            image: "/images/destinations/andaman-sunrise.jpeg",
+            imageAlt: "Sunrise in the Andaman Islands",
+          },
+        ],
       },
       {
         slug: "rajasthan",
@@ -148,4 +173,15 @@ export function getAllDestinationPlaces(): DestinationPlace[] {
 
 export function getDestinationBySlug(slug: string): DestinationPlace | undefined {
   return getAllDestinationPlaces().find((p) => p.slug === slug);
+}
+
+export function getRegionForDestination(slug: string): DestinationRegion | undefined {
+  return destinationRegions.find((region) => region.places.some((p) => p.slug === slug));
+}
+
+/** Other places in the same region — real destinations only */
+export function getRelatedDestinations(slug: string, limit = 3): DestinationPlace[] {
+  const region = getRegionForDestination(slug);
+  if (!region) return [];
+  return region.places.filter((p) => p.slug !== slug).slice(0, limit);
 }
