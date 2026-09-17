@@ -52,7 +52,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
               href="/blog"
               className="mb-6 inline-block text-xs font-semibold uppercase tracking-[0.16em] text-white/70 transition-colors hover:text-white"
             >
-              ← All guides
+              ← All stories
             </Link>
             <p className="editorial-eyebrow mb-4 text-white/65">
               {post.category || "Travel guide"}
@@ -140,7 +140,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
 
           <div className="mt-16 flex flex-col gap-4 border-t border-border pt-10 sm:flex-row sm:items-center sm:justify-between">
             <Link href="/blog" className="editorial-link">
-              ← More guides
+              ← More stories
             </Link>
             <Link href="/plan-your-trip" className="btn-editorial-primary">
               Plan Your Trip

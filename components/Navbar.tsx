@@ -11,11 +11,9 @@ const YOUTUBE_URL = "https://www.youtube.com/@NodesofTravel";
 
 const navLinks = [
   { href: "/destinations", label: "Destinations" },
-  // Hidden until content types are distinct (do not delete)
-  // { href: "/blog", label: "Journeys" },
-  { href: "/blog", label: "Travel Guides" },
+  { href: "/blog", label: "Stories" },
+  { href: "/guides", label: "Guides" },
   { href: "/videos", label: "Videos" },
-  // { href: "/blog", label: "Stories" },
 ];
 
 const Navbar = () => {

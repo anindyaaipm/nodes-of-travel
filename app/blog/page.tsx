@@ -4,8 +4,8 @@ import { getAllPosts } from "@/lib/blog";
 import { guideHeroBySlug } from "@/lib/blog-images";
 
 export const metadata = {
-  title: "Travel Guides — Nodes of Travel",
-  description: "Written travel guides and itineraries from journeys we've taken around the world.",
+  title: "Stories — Nodes of Travel",
+  description: "Written travel stories and itineraries from journeys we've taken around the world.",
 };
 
 export default function BlogPage() {
@@ -16,15 +16,19 @@ export default function BlogPage() {
       <div className="container mx-auto px-4">
         <div className="mx-auto mb-14 max-w-2xl text-center md:mb-16">
           <p className="editorial-eyebrow mb-4">Written journeys</p>
-          <h1 className="font-display text-4xl md:text-5xl">Travel Guides</h1>
+          <h1 className="font-display text-4xl md:text-5xl">Stories</h1>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
-            Day-by-day routes and place notes that accompany our films — from real trips, not
-            templates.
+            Day-by-day narratives that accompany our films — from real trips, not templates. For
+            booking-ready handbooks and PDFs, see{" "}
+            <Link href="/guides" className="editorial-link">
+              Guides
+            </Link>
+            .
           </p>
         </div>
 
         {posts.length === 0 ? (
-          <p className="text-center text-muted-foreground">Guides coming soon.</p>
+          <p className="text-center text-muted-foreground">Stories coming soon.</p>
         ) : (
           <div className="space-y-12 md:space-y-16">
             {posts.map((post, index) => {
@@ -59,7 +63,7 @@ export default function BlogPage() {
                   </div>
                   <div className={`md:col-span-6 ${reverse ? "md:order-1" : ""}`}>
                     <p className="editorial-eyebrow mb-3">
-                      {post.category || "Travel guide"}
+                      {post.category || "Travel story"}
                       {post.date
                         ? ` · ${new Date(post.date).toLocaleDateString("en-US", {
                             year: "numeric",
@@ -74,7 +78,7 @@ export default function BlogPage() {
                       {post.excerpt}
                     </p>
                     <span className="mt-6 inline-block text-xs font-semibold uppercase tracking-[0.16em] text-primary">
-                      Read guide
+                      Read story
                     </span>
                   </div>
                 </Link>

@@ -96,7 +96,15 @@ export default function DestinationsPage() {
                             href={`/blog/${place.blogSlug}`}
                             className="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-foreground/80 transition-colors hover:text-primary"
                           >
-                            Read Guide
+                            Read story
+                          </Link>
+                        ) : null}
+                        {place.handbookSlug ? (
+                          <Link
+                            href={`/guides/${place.handbookSlug}`}
+                            className="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-foreground/80 transition-colors hover:text-primary"
+                          >
+                            Planning guide
                           </Link>
                         ) : null}
                       </div>
