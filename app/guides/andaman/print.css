@@ -1,0 +1,174 @@
+/**
+ * Print / PDF styles for the Andaman guide product page.
+ * Goal: compact handbook ~like the V1 sample (cover + flowing sections on A4).
+ * Screen chrome (nav, sticky bar, CTAs) hides; cover stays visible.
+ */
+
+/* Screen-only / print-only toggles */
+.guide-print-only {
+  display: none;
+}
+
+@media print {
+  .guide-print-only {
+    display: block;
+  }
+
+  .guide-no-print,
+  .guide-action-link {
+    display: none !important;
+  }
+
+  @page {
+    size: A4;
+    margin: 12mm 11mm 14mm;
+  }
+
+  html,
+  body {
+    background: white !important;
+    color: #111 !important;
+    font-size: 10pt;
+    line-height: 1.45;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Site chrome only — do NOT target .guide-hero (cover used to be <header>) */
+  body > header,
+  header.fixed,
+  footer {
+    display: none !important;
+  }
+
+  main {
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .andaman-guide {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: white !important;
+  }
+
+  .andaman-guide > .mx-auto {
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* —— Cover —— */
+  .guide-hero {
+    position: relative !important;
+    min-height: 255mm !important;
+    height: 255mm !important;
+    break-after: page;
+    page-break-after: always;
+    overflow: hidden !important;
+  }
+
+  .guide-hero img {
+    object-fit: cover !important;
+    object-position: center !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .guide-hero .guide-hero-overlay {
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.82),
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.2)
+    ) !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .guide-hero h1 {
+    font-size: 42pt !important;
+    letter-spacing: 0.08em !important;
+    color: white !important;
+  }
+
+  .guide-hero .font-display,
+  .guide-hero p {
+    color: rgba(255, 255, 255, 0.92) !important;
+  }
+
+  /* —— Sections —— */
+  .guide-section {
+    padding-top: 5mm !important;
+    padding-bottom: 5mm !important;
+    border-color: #d4d0c8 !important;
+  }
+
+  .guide-section-break {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  /* Prefer keeping stop rows / small blocks together; allow long sections to flow */
+  .guide-section > ol > li,
+  .guide-section > ul > li,
+  .guide-table,
+  .guide-table tr,
+  .guide-table > div {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .guide-section h2 {
+    font-size: 16pt !important;
+  }
+
+  .guide-section h3 {
+    font-size: 12pt !important;
+  }
+
+  .editorial-eyebrow {
+    font-size: 7.5pt !important;
+    letter-spacing: 0.14em !important;
+  }
+
+  /* —— Photos: compact, handbook scale —— */
+  .guide-figure {
+    position: relative !important;
+    width: 100% !important;
+    max-height: 46mm !important;
+    height: 46mm !important;
+    aspect-ratio: auto !important;
+    margin-bottom: 4mm !important;
+    overflow: hidden !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .guide-figure img {
+    object-fit: cover !important;
+    object-position: center !important;
+    max-height: 46mm !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Links: keep readable names; drop underline noise */
+  a {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+
+  /* Tables / cost blocks */
+  .guide-table {
+    font-size: 9pt !important;
+  }
+
+  .guide-colophon {
+    break-before: page;
+    page-break-before: always;
+    padding-top: 40mm !important;
+  }
+}

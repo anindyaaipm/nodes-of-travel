@@ -17,6 +17,8 @@ export type DestinationPlace = {
   imageAlt: string;
   blogSlug?: string;
   playlistId?: string;
+  /** Live handbook under /guides/[slug] */
+  handbookSlug?: string;
   /** Optional place stills for destination detail “Explore” grids — real local photos only */
   explore?: DestinationExploreItem[];
 };
@@ -73,6 +75,7 @@ export const destinationRegions: DestinationRegion[] = [
         imageAlt: "Andaman Islands",
         blogSlug: "week-in-andaman",
         playlistId: "andaman-series",
+        handbookSlug: "andaman",
         explore: [
           {
             label: "Port Blair",

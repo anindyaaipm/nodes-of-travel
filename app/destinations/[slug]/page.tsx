@@ -96,22 +96,29 @@ export default function DestinationPage({ params }: { params: { slug: string } }
             </p>
             {guide?.title ? (
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-                Follow our written companion{" "}
+                Follow our written story{" "}
                 <Link href={`/blog/${guide.slug}`} className="editorial-link">
                   {guide.title}
                 </Link>
+                {place.handbookSlug ? (
+                  <>
+                    {" "}
+                    or open the{" "}
+                    <Link href={`/guides/${place.handbookSlug}`} className="editorial-link">
+                      planning guide
+                    </Link>
+                  </>
+                ) : null}
                 {leadFilm ? (
                   <>
                     {" "}
-                    or watch{" "}
+                    · watch{" "}
                     <Link href={`/videos#${leadFilm.id}`} className="editorial-link">
                       {leadFilm.title}
                     </Link>
-                    .
                   </>
-                ) : (
-                  "."
-                )}
+                ) : null}
+                .
               </p>
             ) : null}
           </div>
@@ -200,46 +207,77 @@ export default function DestinationPage({ params }: { params: { slug: string } }
         </section>
       ) : null}
 
-      {/* 4. Related Guide */}
-      {guide ? (
+      {/* 4. Related story + planning handbook */}
+      {guide || place.handbookSlug ? (
         <section className="bg-background py-16 md:py-24">
-          <div className="container mx-auto px-4">
-            <div className="mb-10 md:mb-12">
-              <p className="editorial-eyebrow mb-4">Guide</p>
-              <h2 className="font-display text-3xl md:text-4xl">Read the guide</h2>
-            </div>
+          <div className="container mx-auto px-4 space-y-16">
+            {guide ? (
+              <div>
+                <div className="mb-10 md:mb-12">
+                  <p className="editorial-eyebrow mb-4">Story</p>
+                  <h2 className="font-display text-3xl md:text-4xl">Read the story</h2>
+                </div>
 
-            <Link
-              href={`/blog/${guide.slug}`}
-              className="group grid items-center gap-8 md:grid-cols-12 md:gap-12"
-            >
-              <div className="image-cinematic-zoom relative aspect-[16/10] overflow-hidden md:col-span-6">
-                {guideHero ? (
-                  <Image
-                    src={guideHero}
-                    alt={guide.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className="image-cinematic object-cover"
-                    unoptimized={guideHero.startsWith("http")}
-                  />
-                ) : null}
+                <Link
+                  href={`/blog/${guide.slug}`}
+                  className="group grid items-center gap-8 md:grid-cols-12 md:gap-12"
+                >
+                  <div className="image-cinematic-zoom relative aspect-[16/10] overflow-hidden md:col-span-6">
+                    {guideHero ? (
+                      <Image
+                        src={guideHero}
+                        alt={guide.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        className="image-cinematic object-cover"
+                        unoptimized={guideHero.startsWith("http")}
+                      />
+                    ) : null}
+                  </div>
+                  <div className="md:col-span-6">
+                    <p className="editorial-eyebrow mb-3">{guide.category || "Travel story"}</p>
+                    <h3 className="font-display text-2xl transition-colors group-hover:text-primary md:text-3xl">
+                      {guide.title}
+                    </h3>
+                    {guide.excerpt ? (
+                      <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
+                        {guide.excerpt}
+                      </p>
+                    ) : null}
+                    <span className="mt-6 inline-block text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-foreground/80 transition-colors group-hover:text-primary">
+                      Read story →
+                    </span>
+                  </div>
+                </Link>
               </div>
-              <div className="md:col-span-6">
-                <p className="editorial-eyebrow mb-3">{guide.category || "Travel guide"}</p>
-                <h3 className="font-display text-2xl transition-colors group-hover:text-primary md:text-3xl">
-                  {guide.title}
-                </h3>
-                {guide.excerpt ? (
-                  <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
-                    {guide.excerpt}
-                  </p>
-                ) : null}
-                <span className="mt-6 inline-block text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-foreground/80 transition-colors group-hover:text-primary">
-                  Read guide →
-                </span>
+            ) : null}
+
+            {place.handbookSlug ? (
+              <div>
+                <div className="mb-10 md:mb-12">
+                  <p className="editorial-eyebrow mb-4">Guide</p>
+                  <h2 className="font-display text-3xl md:text-4xl">Planning handbook</h2>
+                </div>
+                <Link
+                  href={`/guides/${place.handbookSlug}`}
+                  className="group flex flex-col gap-4 border border-border/70 bg-[#f3efe7]/50 px-6 py-8 md:flex-row md:items-center md:justify-between md:px-8"
+                >
+                  <div>
+                    <p className="editorial-eyebrow mb-2">Free PDF</p>
+                    <h3 className="font-display text-2xl transition-colors group-hover:text-primary md:text-3xl">
+                      {place.name} travel guide
+                    </h3>
+                    <p className="mt-3 max-w-xl text-base text-muted-foreground">
+                      Stops, ferries, costs, and flexible day plans — open on the site or download the
+                      PDF.
+                    </p>
+                  </div>
+                  <span className="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-primary">
+                    Open guide →
+                  </span>
+                </Link>
               </div>
-            </Link>
+            ) : null}
           </div>
         </section>
       ) : null}

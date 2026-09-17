@@ -2,16 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { Suspense } from "react";
 import SubscribeForm from "@/components/SubscribeForm";
-import { getAllPosts } from "@/lib/blog";
 import { getVideoById } from "@/lib/videos";
 import {
-  featuredGuideSlugs,
   featuredVideoIds,
-  guideImageBySlug,
   homeJourneys,
   ourTravelsGrid,
   blogSlugToDestination,
 } from "./home-data";
+import { guideProducts } from "@/lib/guides";
 
 function SectionHeader({
   eyebrow,
@@ -269,10 +267,7 @@ function VideosSection() {
 }
 
 function GuidesSection() {
-  const posts = getAllPosts();
-  const guides = featuredGuideSlugs
-    .map((slug) => posts.find((p) => p.slug === slug))
-    .filter((p): p is NonNullable<typeof p> => Boolean(p));
+  const guides = guideProducts;
 
   return (
     <section className="bg-background py-20 md:py-28">
@@ -280,66 +275,74 @@ function GuidesSection() {
         <div className="mb-14 flex flex-col gap-8 md:mb-16 md:flex-row md:items-end md:justify-between">
           <SectionHeader
             eyebrow="Guides"
-            title="Travel guides"
-            intro="Written companions to the films — day-by-day routes, places we loved, and the details that make a trip work."
+            title="Planning handbooks"
+            intro="Practical companions for booking and choosing — free PDF downloads and paid planners when they’re ready."
           />
-          <Link href="/blog" className="btn-editorial-outline-dark shrink-0 self-start md:self-auto">
-            Read the guides
+          <Link href="/guides" className="btn-editorial-outline-dark shrink-0 self-start md:self-auto">
+            All guides
           </Link>
         </div>
 
         <div className="space-y-10 md:space-y-14">
-          {guides.map((post, index) => {
-            const imageSrc = guideImageBySlug[post.slug] || post.imageUrl;
+          {guides.map((guide, index) => {
             const reverse = index % 2 === 1;
+            const isLive = guide.status === "live" && guide.href;
 
-            return (
-              <Link
-                key={post.slug}
-                href={`/blog/${post.slug}`}
-                className="group grid items-center gap-8 md:grid-cols-12 md:gap-12"
-              >
+            const inner = (
+              <>
                 <div
                   className={`image-cinematic-zoom relative aspect-[16/10] overflow-hidden md:col-span-6 ${
                     reverse ? "md:order-2" : ""
                   }`}
                 >
-                  {imageSrc ? (
-                    <Image
-                      src={imageSrc}
-                      alt={post.title}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      className="image-cinematic object-cover"
-                      unoptimized={imageSrc.startsWith("http")}
-                    />
-                  ) : (
-                    <div className="flex h-full items-center justify-center bg-muted text-5xl">
-                      {post.image || "✦"}
-                    </div>
-                  )}
+                  <Image
+                    src={guide.image}
+                    alt={guide.imageAlt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="image-cinematic object-cover object-center"
+                  />
                 </div>
                 <div className={`md:col-span-6 ${reverse ? "md:order-1" : ""}`}>
                   <p className="editorial-eyebrow mb-3">
-                    {post.category || "Travel guide"}
-                    {post.date
-                      ? ` · ${new Date(post.date).toLocaleDateString("en-US", {
-                          year: "numeric",
-                          month: "short",
-                        })}`
-                      : ""}
+                    {guide.access === "free" ? "Free PDF" : "PDF"}
                   </p>
-                  <h3 className="font-display text-2xl leading-snug transition-colors group-hover:text-primary md:text-3xl">
-                    {post.title.replace(/^[^\w]+/, "").trim() || post.title}
+                  <h3
+                    className={`font-display text-2xl leading-snug md:text-3xl ${
+                      isLive ? "transition-colors group-hover:text-primary" : ""
+                    }`}
+                  >
+                    {guide.title}
                   </h3>
                   <p className="mt-4 max-w-lg text-base leading-relaxed text-muted-foreground line-clamp-3">
-                    {post.excerpt}
+                    {guide.subtitle}
                   </p>
                   <span className="mt-6 inline-block text-xs font-semibold uppercase tracking-[0.16em] text-primary">
-                    Read guide
+                    {isLive ? "Open guide" : "Coming soon"}
                   </span>
                 </div>
-              </Link>
+              </>
+            );
+
+            if (isLive) {
+              return (
+                <Link
+                  key={guide.slug}
+                  href={guide.href!}
+                  className="group grid items-center gap-8 md:grid-cols-12 md:gap-12"
+                >
+                  {inner}
+                </Link>
+              );
+            }
+
+            return (
+              <div
+                key={guide.slug}
+                className="grid items-center gap-8 opacity-90 md:grid-cols-12 md:gap-12"
+              >
+                {inner}
+              </div>
             );
           })}
         </div>
